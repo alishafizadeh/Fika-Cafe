@@ -1,0 +1,29 @@
+# Render Blueprint for Fika (Node.js web service, zero dependencies, JSON file database).
+# Data lives in /var/data (persistent disk). A disk needs a PAID instance; on the free plan every restart/redeploy/spin-down erases ALL data.
+services:
+  - type: web
+    runtime: node
+    name: fika
+    region: frankfurt            # cannot be changed after creation
+    plan: 0.5c-512mb             # paid (needed for the disk). "free" works only for a throw-away demo (no disk -> data is lost)
+    buildCommand: npm install    # no dependencies; this is effectively a no-op
+    startCommand: npm start      # node server.js (reads PORT from Render)
+    healthCheckPath: /healthz
+    autoDeployTrigger: commit
+    disk:
+      name: fika-data
+      mountPath: /var/data       # only files under this path survive deploys and restarts
+      sizeGB: 1
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: COOKIE_SECURE       # https cookies (__Host-) + strict staff rules (12+ char passwords, mandatory 2FA)
+        value: "1"
+      - key: TRUST_PROXY         # number of proxies in front of the app; see docs/deploy-render.md ("Client IP") if rate limits look shared
+        value: "1"
+      - key: DB_FILE
+        value: /var/data/db.json
+      - key: DATA_KEY            # encrypts 2FA secrets and backups. Render generates it once: COPY IT SOMEWHERE SAFE (without it backups cannot be restored)
+        generateValue: true
+      - key: PUBLIC_URL          # e.g. https://fika.onrender.com (or your own domain); used for password-reset links
+        sync: false

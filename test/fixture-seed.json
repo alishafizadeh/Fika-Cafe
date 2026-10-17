@@ -1,0 +1,652 @@
+{
+ "cats": [
+  {
+   "key": "coffee",
+   "en": "Coffee",
+   "fa": "قهوه"
+  },
+  {
+   "key": "cold-drinks",
+   "en": "Cold Drinks",
+   "fa": "نوشیدنی سرد"
+  },
+  {
+   "key": "tea",
+   "en": "Tea",
+   "fa": "چای"
+  },
+  {
+   "key": "desserts",
+   "en": "Desserts",
+   "fa": "دسر"
+  },
+  {
+   "key": "food",
+   "en": "Food",
+   "fa": "غذا"
+  },
+  {
+   "key": "specials",
+   "en": "Specials",
+   "fa": "ویژه"
+  }
+ ],
+ "products": [
+  {
+   "id": "flat-white",
+   "catKey": "coffee",
+   "nameEn": "Flat White",
+   "nameFa": "فلت وایت",
+   "descEn": "Velvety microfoam over a double ristretto.",
+   "descFa": "اسپرسوی دوبل با شیر بخارداده و فوم مخملی.",
+   "ingEn": [
+    "Espresso",
+    "Whole milk"
+   ],
+   "ingFa": [
+    "اسپرسو",
+    "شیر کامل"
+   ],
+   "emoji": "☕",
+   "featured": true,
+   "active": true,
+   "variants": [
+    {
+     "id": "flat-white:0",
+     "labelEn": "Small",
+     "labelFa": "کوچک",
+     "price": 120000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    },
+    {
+     "id": "flat-white:1",
+     "labelEn": "Regular",
+     "labelFa": "معمولی",
+     "price": 140000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    }
+   ]
+  },
+  {
+   "id": "cappuccino",
+   "catKey": "coffee",
+   "nameEn": "Cappuccino",
+   "nameFa": "کاپوچینو",
+   "descEn": "Equal parts espresso, steamed milk and foam.",
+   "descFa": "اسپرسو، شیر و فوم به‌نسبت مساوی.",
+   "ingEn": [
+    "Espresso",
+    "Milk",
+    "Foam"
+   ],
+   "ingFa": [
+    "اسپرسو",
+    "شیر",
+    "فوم"
+   ],
+   "emoji": "☕",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "cappuccino:0",
+     "labelEn": "Small",
+     "labelFa": "کوچک",
+     "price": 115000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    },
+    {
+     "id": "cappuccino:1",
+     "labelEn": "Regular",
+     "labelFa": "معمولی",
+     "price": 135000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    }
+   ]
+  },
+  {
+   "id": "pour-over",
+   "catKey": "coffee",
+   "nameEn": "Pour Over",
+   "nameFa": "پوراوور",
+   "descEn": "Single-origin filter coffee, brewed slowly by hand.",
+   "descFa": "قهوهٔ فیلتر تک‌منشأ که آهسته و دستی دم می‌شود.",
+   "ingEn": [
+    "Single-origin beans",
+    "Filtered water"
+   ],
+   "ingFa": [
+    "دانهٔ تک‌منشأ",
+    "آب فیلترشده"
+   ],
+   "emoji": "🫖",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "pour-over:0",
+     "labelEn": "Regular",
+     "labelFa": "معمولی",
+     "price": 135000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    }
+   ]
+  },
+  {
+   "id": "cortado",
+   "catKey": "coffee",
+   "nameEn": "Cortado",
+   "nameFa": "کورتادو",
+   "descEn": "Espresso cut with a splash of warm milk.",
+   "descFa": "اسپرسو با کمی شیر گرم.",
+   "ingEn": [
+    "Espresso",
+    "Milk"
+   ],
+   "ingFa": [
+    "اسپرسو",
+    "شیر"
+   ],
+   "emoji": "☕",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "cortado:0",
+     "labelEn": "Regular",
+     "labelFa": "معمولی",
+     "price": 105000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    }
+   ]
+  },
+  {
+   "id": "cold-brew",
+   "catKey": "cold-drinks",
+   "nameEn": "Cold Brew",
+   "nameFa": "کلد برو",
+   "descEn": "Steeped for 18 hours. Smooth and low in acidity.",
+   "descFa": "هجده ساعت دم‌کشیده؛ نرم و کم‌اسید.",
+   "ingEn": [
+    "Coffee",
+    "Cold water",
+    "Ice"
+   ],
+   "ingFa": [
+    "قهوه",
+    "آب سرد",
+    "یخ"
+   ],
+   "emoji": "🧊",
+   "featured": true,
+   "active": true,
+   "variants": [
+    {
+     "id": "cold-brew:0",
+     "labelEn": "Regular",
+     "labelFa": "معمولی",
+     "price": 130000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    },
+    {
+     "id": "cold-brew:1",
+     "labelEn": "Large",
+     "labelFa": "بزرگ",
+     "price": 160000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    }
+   ]
+  },
+  {
+   "id": "iced-latte",
+   "catKey": "cold-drinks",
+   "nameEn": "Iced Latte",
+   "nameFa": "آیس لاته",
+   "descEn": "Chilled espresso over milk and ice.",
+   "descFa": "اسپرسوی سرد روی شیر و یخ.",
+   "ingEn": [
+    "Espresso",
+    "Milk",
+    "Ice"
+   ],
+   "ingFa": [
+    "اسپرسو",
+    "شیر",
+    "یخ"
+   ],
+   "emoji": "🥛",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "iced-latte:0",
+     "labelEn": "Regular",
+     "labelFa": "معمولی",
+     "price": 135000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    },
+    {
+     "id": "iced-latte:1",
+     "labelEn": "Large",
+     "labelFa": "بزرگ",
+     "price": 165000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    }
+   ]
+  },
+  {
+   "id": "jasmine-tea",
+   "catKey": "tea",
+   "nameEn": "Jasmine Tea",
+   "nameFa": "چای یاسمن",
+   "descEn": "Fragrant green tea scented with jasmine blossoms.",
+   "descFa": "چای سبز معطر به شکوفهٔ یاس.",
+   "ingEn": [
+    "Green tea",
+    "Jasmine"
+   ],
+   "ingFa": [
+    "چای سبز",
+    "یاس"
+   ],
+   "emoji": "🍵",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "jasmine-tea:0",
+     "labelEn": "Pot",
+     "labelFa": "قوری",
+     "price": 95000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    }
+   ]
+  },
+  {
+   "id": "chai",
+   "catKey": "tea",
+   "nameEn": "Masala Chai",
+   "nameFa": "چای ماسالا",
+   "descEn": "Black tea simmered with spices and milk.",
+   "descFa": "چای سیاه دم‌کرده با ادویه و شیر.",
+   "ingEn": [
+    "Black tea",
+    "Cardamom",
+    "Ginger",
+    "Milk"
+   ],
+   "ingFa": [
+    "چای سیاه",
+    "هل",
+    "زنجبیل",
+    "شیر"
+   ],
+   "emoji": "🫖",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "chai:0",
+     "labelEn": "Regular",
+     "labelFa": "معمولی",
+     "price": 110000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    }
+   ]
+  },
+  {
+   "id": "croissant",
+   "catKey": "desserts",
+   "nameEn": "Butter Croissant",
+   "nameFa": "کروسان کره‌ای",
+   "descEn": "Baked each morning, crisp and flaky.",
+   "descFa": "هر صبح پخته می‌شود؛ ترد و لایه‌لایه.",
+   "ingEn": [
+    "Flour",
+    "Butter",
+    "Yeast"
+   ],
+   "ingFa": [
+    "آرد",
+    "کره",
+    "مایه"
+   ],
+   "emoji": "🥐",
+   "featured": true,
+   "active": true,
+   "variants": [
+    {
+     "id": "croissant:0",
+     "labelEn": "One",
+     "labelFa": "یک عدد",
+     "price": 95000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    }
+   ]
+  },
+  {
+   "id": "cheesecake",
+   "catKey": "desserts",
+   "nameEn": "Basque Cheesecake",
+   "nameFa": "چیزکیک باسک",
+   "descEn": "Burnt top, creamy centre.",
+   "descFa": "رویهٔ سوخته و مرکز خامه‌ای.",
+   "ingEn": [
+    "Cream cheese",
+    "Eggs",
+    "Cream"
+   ],
+   "ingFa": [
+    "پنیر خامه‌ای",
+    "تخم‌مرغ",
+    "خامه"
+   ],
+   "emoji": "🍰",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "cheesecake:0",
+     "labelEn": "Slice",
+     "labelFa": "یک برش",
+     "price": 160000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    }
+   ]
+  },
+  {
+   "id": "avo-toast",
+   "catKey": "food",
+   "nameEn": "Avocado Toast",
+   "nameFa": "نان تست آووکادو",
+   "descEn": "Sourdough, avocado, lemon, chilli flakes.",
+   "descFa": "نان خمیرترش، آووکادو، لیمو و فلفل پرک‌شده.",
+   "ingEn": [
+    "Sourdough",
+    "Avocado",
+    "Lemon",
+    "Chilli"
+   ],
+   "ingFa": [
+    "نان خمیرترش",
+    "آووکادو",
+    "لیمو",
+    "فلفل پرک‌شده"
+   ],
+   "emoji": "🥑",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "avo-toast:0",
+     "labelEn": "One",
+     "labelFa": "یک عدد",
+     "price": 240000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    }
+   ]
+  },
+  {
+   "id": "cardamom-latte",
+   "catKey": "specials",
+   "nameEn": "Cardamom Latte",
+   "nameFa": "لاتهٔ هل",
+   "descEn": "This week only: espresso, oat milk, cardamom syrup.",
+   "descFa": "ویژهٔ همین هفته: اسپرسو، شیر جو دوسر و شربت هل.",
+   "ingEn": [
+    "Espresso",
+    "Oat milk",
+    "Cardamom syrup"
+   ],
+   "ingFa": [
+    "اسپرسو",
+    "شیر جو دوسر",
+    "شربت هل"
+   ],
+   "emoji": "✨",
+   "featured": true,
+   "active": true,
+   "variants": [
+    {
+     "id": "cardamom-latte:0",
+     "labelEn": "Regular",
+     "labelFa": "معمولی",
+     "price": 145000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    },
+    {
+     "id": "cardamom-latte:1",
+     "labelEn": "Large",
+     "labelFa": "بزرگ",
+     "price": 175000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    }
+   ]
+  }
+ ],
+ "challenges": [
+  {
+   "id": "try-3-coffees",
+   "e": "☕",
+   "titleEn": "Try 3 different coffees",
+   "titleFa": "سه قهوهٔ مختلف را امتحان کن",
+   "descEn": "Order three different coffee drinks this week and discover your favourite.",
+   "descFa": "این هفته سه نوشیدنی قهوهٔ متفاوت سفارش بده و موردعلاقه‌ات را پیدا کن.",
+   "rewardEn": "Free pastry",
+   "rewardFa": "یک شیرینی رایگان",
+   "goal": 3,
+   "pts": 50,
+   "active": true,
+   "rule": {
+    "type": "distinct",
+    "catKey": "coffee"
+   }
+  },
+  {
+   "id": "visit-3-times",
+   "e": "📍",
+   "titleEn": "Visit three times",
+   "titleFa": "سه بار به کافه بیا",
+   "descEn": "Place three orders in a week. Regulars get rewarded.",
+   "descFa": "در یک هفته سه سفارش ثبت کن. مشتری‌های ثابت جایزه می‌گیرند.",
+   "rewardEn": "Free filter coffee",
+   "rewardFa": "یک قهوهٔ فیلتر رایگان",
+   "goal": 3,
+   "pts": 40,
+   "active": true,
+   "rule": {
+    "type": "orders",
+    "catKey": null
+   }
+  },
+  {
+   "id": "sweet-tooth",
+   "e": "🍰",
+   "titleEn": "Sweet tooth",
+   "titleFa": "عاشق شیرینی",
+   "descEn": "Try two different desserts from our counter.",
+   "descFa": "دو دسر مختلف از ویترین ما را امتحان کن.",
+   "rewardEn": "10% off next order",
+   "rewardFa": "۱۰٪ تخفیف سفارش بعدی",
+   "goal": 2,
+   "pts": 30,
+   "active": true,
+   "rule": {
+    "type": "distinct",
+    "catKey": "desserts"
+   }
+  },
+  {
+   "id": "first-coffee",
+   "e": "🌟",
+   "titleEn": "Your first coffee",
+   "titleFa": "اولین قهوه‌ات",
+   "descEn": "New here? Order your first coffee and we'll add a welcome bonus to your points.",
+   "descFa": "تازه آمده‌ای؟ اولین قهوه‌ات را سفارش بده تا یک امتیاز خوش‌آمد برایت ثبت کنیم.",
+   "rewardEn": "Welcome bonus",
+   "rewardFa": "هدیهٔ خوش‌آمد",
+   "goal": 1,
+   "pts": 30,
+   "active": true,
+   "permanent": true,
+   "rule": {
+    "type": "distinct",
+    "catKey": "coffee",
+    "firstOnly": true
+   }
+  }
+ ],
+ "combos": [
+  {
+   "id": "morning",
+   "titleEn": "Morning classic",
+   "titleFa": "صبحانهٔ کلاسیک",
+   "descEn": "Flat white with a buttery croissant.",
+   "descFa": "فلت وایت همراه کروسان کره‌ای.",
+   "items": [
+    [
+     "flat-white",
+     1
+    ],
+    [
+     "croissant",
+     0
+    ]
+   ]
+  },
+  {
+   "id": "afternoon",
+   "titleEn": "Afternoon break",
+   "titleFa": "استراحت عصرانه",
+   "descEn": "Iced latte and a slice of Basque cheesecake.",
+   "descFa": "آیس لاته و یک برش چیزکیک باسک.",
+   "items": [
+    [
+     "iced-latte",
+     0
+    ],
+    [
+     "cheesecake",
+     0
+    ]
+   ]
+  },
+  {
+   "id": "brunch",
+   "titleEn": "Slow brunch",
+   "titleFa": "برانچ آرام",
+   "descEn": "Avocado toast with a pour over.",
+   "descFa": "نان تست آووکادو با پوراوور.",
+   "items": [
+    [
+     "avo-toast",
+     0
+    ],
+    [
+     "pour-over",
+     0
+    ]
+   ]
+  },
+  {
+   "id": "tea-time",
+   "titleEn": "Tea time",
+   "titleFa": "وقت چای",
+   "descEn": "Masala chai with a croissant.",
+   "descFa": "چای ماسالا با کروسان.",
+   "items": [
+    [
+     "chai",
+     0
+    ],
+    [
+     "croissant",
+     0
+    ]
+   ]
+  }
+ ],
+ "cafe": {
+  "hoursEn": [
+   [
+    "Mon–Fri",
+    "7:30 – 19:00"
+   ],
+   [
+    "Sat–Sun",
+    "9:00 – 20:00"
+   ]
+  ],
+  "hoursFa": [
+   [
+    "شنبه تا چهارشنبه",
+    "۷:۳۰ تا ۱۹:۰۰"
+   ],
+   [
+    "پنجشنبه و جمعه",
+    "۹:۰۰ تا ۲۰:۰۰"
+   ]
+  ],
+  "addrEn": "12 Pine Street, Old Town",
+  "addrFa": "خیابان کاج، پلاک ۱۲، بافت قدیم",
+  "aboutEn": "Fika is a small neighbourhood cafe. We roast in small batches, bake every morning, and keep things simple.",
+  "aboutFa": "فیکا یک کافهٔ کوچک محلی است. قهوه را در بچ‌های کوچک برشته می‌کنیم، هر صبح نان و شیرینی می‌پزیم و همه‌چیز را ساده نگه می‌داریم."
+ },
+ "settings": {
+  "tomanPerPoint": 3000,
+  "comboDiscount": 0.1,
+  "goal": 200,
+  "freeItem": "flat-white:1"
+ }
+}

@@ -1,0 +1,15 @@
+# runtime data (database, key file, encrypted backups, security log)
+data/
+*.json.enc
+*.key
+*.log
+*.tmp
+*.bak
+# secrets
+.env
+.env.*
+!.env.example
+# tooling / OS
+node_modules/
+.DS_Store
+Thumbs.db

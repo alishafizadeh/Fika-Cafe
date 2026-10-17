@@ -1,0 +1,1 @@
+try{var h=document.documentElement,p=JSON.parse(localStorage.getItem("prefs"));if(p&&p.theme&&p.theme!=="system")h.dataset.theme=p.theme;if(p&&p.motion)h.classList.add("rm");if(localStorage.getItem("lang")=='"fa"'){h.lang="fa";h.dir="rtl"}}catch(e){}

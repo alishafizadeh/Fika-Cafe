@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f6f0e6">
+<title>Fika — Cafe</title>
+<script src="/theme.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600&family=Inter:wght@400;500;600&family=Vazirmatn:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="shell">
+<aside class="side" id="side">
+<a class="logo" href="#/" aria-label="Fika"><span class="mark"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M9 14h12v4a6 6 0 0 1-12 0z" fill="currentColor"/><path d="M21 15h1.5a2.5 2.5 0 0 1 0 5H21" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M13 6.500c-1 1.500 1 2.500 0 4M17 6.500c-1 1.500 1 2.500 0 4" fill="none" stroke="var(--acc)" stroke-width="1.700" stroke-linecap="round"/></svg></span><span class="lt"><b class="bt">Fika</b><small id="bs"></small></span></a>
+<nav id="nav" aria-label="Main"></nav>
+<a class="who" id="who" href="#/profile"></a>
+</aside>
+<div class="col">
+<header class="top" id="top">
+<a class="logo m" href="#/" aria-label="Fika"><span class="mark"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M9 14h12v4a6 6 0 0 1-12 0z" fill="currentColor"/><path d="M21 15h1.5a2.5 2.5 0 0 1 0 5H21" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M13 6.500c-1 1.500 1 2.500 0 4M17 6.500c-1 1.500 1 2.500 0 4" fill="none" stroke="var(--acc)" stroke-width="1.700" stroke-linecap="round"/></svg></span><b class="bt">Fika</b></a>
+<button type="button" class="sfield" id="sbtn" aria-label="Search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6.500"/><path d="M20 20l-4.200-4.200"/></svg><span class="sl"></span><kbd>Ctrl K</kbd></button>
+<div class="ctl" id="ctl"></div>
+</header>
+<main id="app" tabindex="-1"><div class="skel" aria-hidden="true"><i style="width:45%;height:2rem"></i><i style="height:9rem"></i><i style="height:9rem"></i></div></main>
+</div>
+</div>
+<dialog id="sd"><input id="si" type="search" dir="auto" aria-label="Search"><ul class="plain" id="sr"></ul></dialog>
+<div id="toasts" role="status" aria-live="polite"></div>
+<script type="module" src="/app.js"></script>
+</body>
+</html>

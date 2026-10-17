@@ -1,0 +1,3902 @@
+{
+ "cats": [
+  {
+   "key": "espresso-bar",
+   "en": "Espresso Bar",
+   "fa": "اسپرسو بار"
+  },
+  {
+   "key": "iced-coffee",
+   "en": "Iced Coffee",
+   "fa": "آیس کافی"
+  },
+  {
+   "key": "brew",
+   "en": "Brewed Coffee",
+   "fa": "دمی"
+  },
+  {
+   "key": "matcha-bar",
+   "en": "Matcha Bar",
+   "fa": "ماچا بار"
+  },
+  {
+   "key": "vakan-bar",
+   "en": "Vegan Bar",
+   "fa": "وگن بار"
+  },
+  {
+   "key": "milkshake",
+   "en": "Milkshakes",
+   "fa": "میلک شیک"
+  },
+  {
+   "key": "mocktail",
+   "en": "Mocktails",
+   "fa": "ماکتیل"
+  },
+  {
+   "key": "desserts",
+   "en": "Desserts",
+   "fa": "دسر"
+  },
+  {
+   "key": "hot-bar",
+   "en": "Hot Bar",
+   "fa": "بار گرم"
+  },
+  {
+   "key": "herbal-tea",
+   "en": "Herbal Teas",
+   "fa": "دمنوش‌ها"
+  }
+ ],
+ "products": [
+  {
+   "id": "robusta-espresso",
+   "catKey": "espresso-bar",
+   "nameEn": "Robusta Espresso",
+   "nameFa": "اسپرسو روبوستا",
+   "descEn": "A short, bold shot made from Robusta beans: strong, earthy and rich in crema.",
+   "descFa": "شات کوتاه و پرقدرت از دانهٔ روبوستا؛ غلیظ، خاکی و پر از کرما.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "☕",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "robusta-espresso:0",
+     "labelEn": "Regular",
+     "labelFa": "معمولی",
+     "price": 69000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    }
+   ],
+   "art": "cup:espresso:small"
+  },
+  {
+   "id": "arabica-espresso",
+   "catKey": "espresso-bar",
+   "nameEn": "Arabica Espresso",
+   "nameFa": "اسپرسو عربیکا",
+   "descEn": "A smooth, slightly sweeter shot made from Arabica beans with a bright finish.",
+   "descFa": "شات نرم‌تر و کمی شیرین‌تر از دانهٔ عربیکا با پایانی روشن.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "☕",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "arabica-espresso:0",
+     "labelEn": "Regular",
+     "labelFa": "معمولی",
+     "price": 79000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    }
+   ],
+   "art": "cup:espresso:small"
+  },
+  {
+   "id": "americano",
+   "catKey": "espresso-bar",
+   "nameEn": "Americano",
+   "nameFa": "آمریکانو",
+   "descEn": "Espresso lengthened with hot water for a clean, easy-drinking cup.",
+   "descFa": "اسپرسو رقیق‌شده با آب داغ؛ فنجانی سبک، روشن و خوش‌نوش.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "☕",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "americano:0",
+     "labelEn": "50/50 Blend",
+     "labelFa": "۵۰/۵۰",
+     "price": 79000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      1
+     ]
+    },
+    {
+     "id": "americano:1",
+     "labelEn": "100% Arabica",
+     "labelFa": "۱۰۰٪ عربیکا",
+     "price": 79000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      0
+     ]
+    },
+    {
+     "id": "americano:2",
+     "labelEn": "30/70 Robusta",
+     "labelFa": "۳۰/۷۰ ربوستا",
+     "price": 79000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      2
+     ]
+    }
+   ],
+   "art": "cup:coffee",
+   "groups": [
+    {
+     "k": "blend",
+     "en": "Coffee blend (Arabica / Robusta)",
+     "fa": "لاین قهوه (عربیکا / ربوستا)",
+     "def": 1,
+     "opts": [
+      {
+       "en": "100% Arabica",
+       "fa": "۱۰۰٪ عربیکا",
+       "mood": "chill",
+       "hEn": "Smooth, mellow and calm",
+       "hFa": "ملایم، نرم و آرام"
+      },
+      {
+       "en": "50/50 Blend",
+       "fa": "۵۰/۵۰",
+       "mood": "ok",
+       "hEn": "Balanced and cheerful",
+       "hFa": "متعادل و سرحال"
+      },
+      {
+       "en": "30/70 Robusta",
+       "fa": "۳۰/۷۰ ربوستا",
+       "mood": "energy",
+       "hEn": "Bold, strong and energising",
+       "hFa": "پرقدرت و پرانرژی"
+      }
+     ]
+    }
+   ],
+   "gv": 1
+  },
+  {
+   "id": "macchiato",
+   "catKey": "espresso-bar",
+   "nameEn": "Macchiato",
+   "nameFa": "ماکیاتو",
+   "descEn": "Espresso marked with a small dot of milk foam. Strong with a soft edge.",
+   "descFa": "اسپرسو با یک نقطه کف شیر؛ قوی با لبه‌ای نرم.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "☕",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "macchiato:0",
+     "labelEn": "50/50 Blend",
+     "labelFa": "۵۰/۵۰",
+     "price": 88000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      1
+     ]
+    },
+    {
+     "id": "macchiato:1",
+     "labelEn": "100% Arabica",
+     "labelFa": "۱۰۰٪ عربیکا",
+     "price": 88000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      0
+     ]
+    },
+    {
+     "id": "macchiato:2",
+     "labelEn": "30/70 Robusta",
+     "labelFa": "۳۰/۷۰ ربوستا",
+     "price": 88000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      2
+     ]
+    }
+   ],
+   "art": "cup:espresso:small,foam",
+   "groups": [
+    {
+     "k": "blend",
+     "en": "Coffee blend (Arabica / Robusta)",
+     "fa": "لاین قهوه (عربیکا / ربوستا)",
+     "def": 1,
+     "opts": [
+      {
+       "en": "100% Arabica",
+       "fa": "۱۰۰٪ عربیکا",
+       "mood": "chill",
+       "hEn": "Smooth, mellow and calm",
+       "hFa": "ملایم، نرم و آرام"
+      },
+      {
+       "en": "50/50 Blend",
+       "fa": "۵۰/۵۰",
+       "mood": "ok",
+       "hEn": "Balanced and cheerful",
+       "hFa": "متعادل و سرحال"
+      },
+      {
+       "en": "30/70 Robusta",
+       "fa": "۳۰/۷۰ ربوستا",
+       "mood": "energy",
+       "hEn": "Bold, strong and energising",
+       "hFa": "پرقدرت و پرانرژی"
+      }
+     ]
+    }
+   ],
+   "gv": 1
+  },
+  {
+   "id": "romano",
+   "catKey": "espresso-bar",
+   "nameEn": "Romano",
+   "nameFa": "رومانو",
+   "descEn": "Espresso served with a slice of lemon for a bright, citrusy edge.",
+   "descFa": "اسپرسو همراه با لیمو؛ تند، تازه و کمی ترش.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "☕",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "romano:0",
+     "labelEn": "50/50 Blend",
+     "labelFa": "۵۰/۵۰",
+     "price": 91000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      1
+     ]
+    },
+    {
+     "id": "romano:1",
+     "labelEn": "100% Arabica",
+     "labelFa": "۱۰۰٪ عربیکا",
+     "price": 91000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      0
+     ]
+    },
+    {
+     "id": "romano:2",
+     "labelEn": "30/70 Robusta",
+     "labelFa": "۳۰/۷۰ ربوستا",
+     "price": 91000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      2
+     ]
+    }
+   ],
+   "art": "cup:espresso:small,lemon",
+   "groups": [
+    {
+     "k": "blend",
+     "en": "Coffee blend (Arabica / Robusta)",
+     "fa": "لاین قهوه (عربیکا / ربوستا)",
+     "def": 1,
+     "opts": [
+      {
+       "en": "100% Arabica",
+       "fa": "۱۰۰٪ عربیکا",
+       "mood": "chill",
+       "hEn": "Smooth, mellow and calm",
+       "hFa": "ملایم، نرم و آرام"
+      },
+      {
+       "en": "50/50 Blend",
+       "fa": "۵۰/۵۰",
+       "mood": "ok",
+       "hEn": "Balanced and cheerful",
+       "hFa": "متعادل و سرحال"
+      },
+      {
+       "en": "30/70 Robusta",
+       "fa": "۳۰/۷۰ ربوستا",
+       "mood": "energy",
+       "hEn": "Bold, strong and energising",
+       "hFa": "پرقدرت و پرانرژی"
+      }
+     ]
+    }
+   ],
+   "gv": 1
+  },
+  {
+   "id": "sifano",
+   "catKey": "espresso-bar",
+   "nameEn": "Cinnamon",
+   "nameFa": "سینامون",
+   "descEn": "A cinnamon-flavoured espresso-bar drink.",
+   "descFa": "نوشیدنی اسپرسو بار با طعم دارچین.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "☕",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "sifano:0",
+     "labelEn": "50/50 Blend",
+     "labelFa": "۵۰/۵۰",
+     "price": 91000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      1
+     ]
+    },
+    {
+     "id": "sifano:1",
+     "labelEn": "100% Arabica",
+     "labelFa": "۱۰۰٪ عربیکا",
+     "price": 91000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      0
+     ]
+    },
+    {
+     "id": "sifano:2",
+     "labelEn": "30/70 Robusta",
+     "labelFa": "۳۰/۷۰ ربوستا",
+     "price": 91000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      2
+     ]
+    }
+   ],
+   "art": "cup:coffee:foam,cinnamon",
+   "groups": [
+    {
+     "k": "blend",
+     "en": "Coffee blend (Arabica / Robusta)",
+     "fa": "لاین قهوه (عربیکا / ربوستا)",
+     "def": 1,
+     "opts": [
+      {
+       "en": "100% Arabica",
+       "fa": "۱۰۰٪ عربیکا",
+       "mood": "chill",
+       "hEn": "Smooth, mellow and calm",
+       "hFa": "ملایم، نرم و آرام"
+      },
+      {
+       "en": "50/50 Blend",
+       "fa": "۵۰/۵۰",
+       "mood": "ok",
+       "hEn": "Balanced and cheerful",
+       "hFa": "متعادل و سرحال"
+      },
+      {
+       "en": "30/70 Robusta",
+       "fa": "۳۰/۷۰ ربوستا",
+       "mood": "energy",
+       "hEn": "Bold, strong and energising",
+       "hFa": "پرقدرت و پرانرژی"
+      }
+     ]
+    }
+   ],
+   "gv": 1
+  },
+  {
+   "id": "campana",
+   "catKey": "espresso-bar",
+   "nameEn": "Con Panna",
+   "nameFa": "کن پانا",
+   "descEn": "Espresso topped with a dollop of whipped cream.",
+   "descFa": "اسپرسو با یک قاشق خامهٔ زده روی آن.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "☕",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "campana:0",
+     "labelEn": "50/50 Blend",
+     "labelFa": "۵۰/۵۰",
+     "price": 94000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      1
+     ]
+    },
+    {
+     "id": "campana:1",
+     "labelEn": "100% Arabica",
+     "labelFa": "۱۰۰٪ عربیکا",
+     "price": 94000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      0
+     ]
+    },
+    {
+     "id": "campana:2",
+     "labelEn": "30/70 Robusta",
+     "labelFa": "۳۰/۷۰ ربوستا",
+     "price": 94000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      2
+     ]
+    }
+   ],
+   "art": "cup:espresso:small,cream",
+   "groups": [
+    {
+     "k": "blend",
+     "en": "Coffee blend (Arabica / Robusta)",
+     "fa": "لاین قهوه (عربیکا / ربوستا)",
+     "def": 1,
+     "opts": [
+      {
+       "en": "100% Arabica",
+       "fa": "۱۰۰٪ عربیکا",
+       "mood": "chill",
+       "hEn": "Smooth, mellow and calm",
+       "hFa": "ملایم، نرم و آرام"
+      },
+      {
+       "en": "50/50 Blend",
+       "fa": "۵۰/۵۰",
+       "mood": "ok",
+       "hEn": "Balanced and cheerful",
+       "hFa": "متعادل و سرحال"
+      },
+      {
+       "en": "30/70 Robusta",
+       "fa": "۳۰/۷۰ ربوستا",
+       "mood": "energy",
+       "hEn": "Bold, strong and energising",
+       "hFa": "پرقدرت و پرانرژی"
+      }
+     ]
+    }
+   ],
+   "gv": 1
+  },
+  {
+   "id": "cappuccino",
+   "catKey": "espresso-bar",
+   "nameEn": "Cappuccino",
+   "nameFa": "کاپوچینو",
+   "descEn": "Espresso, steamed milk and a thick cap of velvety foam.",
+   "descFa": "اسپرسو، شیر بخارداده و لایه‌ای ضخیم از کف مخملی.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "☕",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "cappuccino:0",
+     "labelEn": "50/50 Blend",
+     "labelFa": "۵۰/۵۰",
+     "price": 92000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      1
+     ]
+    },
+    {
+     "id": "cappuccino:1",
+     "labelEn": "100% Arabica",
+     "labelFa": "۱۰۰٪ عربیکا",
+     "price": 92000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      0
+     ]
+    },
+    {
+     "id": "cappuccino:2",
+     "labelEn": "30/70 Robusta",
+     "labelFa": "۳۰/۷۰ ربوستا",
+     "price": 92000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      2
+     ]
+    }
+   ],
+   "art": "cup:coffee:foam,heart",
+   "groups": [
+    {
+     "k": "blend",
+     "en": "Coffee blend (Arabica / Robusta)",
+     "fa": "لاین قهوه (عربیکا / ربوستا)",
+     "def": 1,
+     "opts": [
+      {
+       "en": "100% Arabica",
+       "fa": "۱۰۰٪ عربیکا",
+       "mood": "chill",
+       "hEn": "Smooth, mellow and calm",
+       "hFa": "ملایم، نرم و آرام"
+      },
+      {
+       "en": "50/50 Blend",
+       "fa": "۵۰/۵۰",
+       "mood": "ok",
+       "hEn": "Balanced and cheerful",
+       "hFa": "متعادل و سرحال"
+      },
+      {
+       "en": "30/70 Robusta",
+       "fa": "۳۰/۷۰ ربوستا",
+       "mood": "energy",
+       "hEn": "Bold, strong and energising",
+       "hFa": "پرقدرت و پرانرژی"
+      }
+     ]
+    }
+   ],
+   "gv": 1
+  },
+  {
+   "id": "cortado",
+   "catKey": "espresso-bar",
+   "nameEn": "Cortado",
+   "nameFa": "کورتادو",
+   "descEn": "Equal parts espresso and warm milk: strong, yet smooth.",
+   "descFa": "اسپرسو و شیر گرم به نسبت مساوی؛ قوی ولی نرم.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "☕",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "cortado:0",
+     "labelEn": "50/50 Blend",
+     "labelFa": "۵۰/۵۰",
+     "price": 88000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      1
+     ]
+    },
+    {
+     "id": "cortado:1",
+     "labelEn": "100% Arabica",
+     "labelFa": "۱۰۰٪ عربیکا",
+     "price": 88000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      0
+     ]
+    },
+    {
+     "id": "cortado:2",
+     "labelEn": "30/70 Robusta",
+     "labelFa": "۳۰/۷۰ ربوستا",
+     "price": 88000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      2
+     ]
+    }
+   ],
+   "art": "cup:coffee:small,foam",
+   "groups": [
+    {
+     "k": "blend",
+     "en": "Coffee blend (Arabica / Robusta)",
+     "fa": "لاین قهوه (عربیکا / ربوستا)",
+     "def": 1,
+     "opts": [
+      {
+       "en": "100% Arabica",
+       "fa": "۱۰۰٪ عربیکا",
+       "mood": "chill",
+       "hEn": "Smooth, mellow and calm",
+       "hFa": "ملایم، نرم و آرام"
+      },
+      {
+       "en": "50/50 Blend",
+       "fa": "۵۰/۵۰",
+       "mood": "ok",
+       "hEn": "Balanced and cheerful",
+       "hFa": "متعادل و سرحال"
+      },
+      {
+       "en": "30/70 Robusta",
+       "fa": "۳۰/۷۰ ربوستا",
+       "mood": "energy",
+       "hEn": "Bold, strong and energising",
+       "hFa": "پرقدرت و پرانرژی"
+      }
+     ]
+    }
+   ],
+   "gv": 1
+  },
+  {
+   "id": "latte",
+   "catKey": "espresso-bar",
+   "nameEn": "Latte",
+   "nameFa": "لاته",
+   "descEn": "Espresso with plenty of silky steamed milk.",
+   "descFa": "اسپرسو با شیر بخارداده و مخملی فراوان.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "☕",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "latte:0",
+     "labelEn": "50/50 Blend",
+     "labelFa": "۵۰/۵۰",
+     "price": 98000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      1
+     ]
+    },
+    {
+     "id": "latte:1",
+     "labelEn": "100% Arabica",
+     "labelFa": "۱۰۰٪ عربیکا",
+     "price": 98000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      0
+     ]
+    },
+    {
+     "id": "latte:2",
+     "labelEn": "30/70 Robusta",
+     "labelFa": "۳۰/۷۰ ربوستا",
+     "price": 98000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      2
+     ]
+    }
+   ],
+   "art": "cup:coffee:foam,heart",
+   "groups": [
+    {
+     "k": "blend",
+     "en": "Coffee blend (Arabica / Robusta)",
+     "fa": "لاین قهوه (عربیکا / ربوستا)",
+     "def": 1,
+     "opts": [
+      {
+       "en": "100% Arabica",
+       "fa": "۱۰۰٪ عربیکا",
+       "mood": "chill",
+       "hEn": "Smooth, mellow and calm",
+       "hFa": "ملایم، نرم و آرام"
+      },
+      {
+       "en": "50/50 Blend",
+       "fa": "۵۰/۵۰",
+       "mood": "ok",
+       "hEn": "Balanced and cheerful",
+       "hFa": "متعادل و سرحال"
+      },
+      {
+       "en": "30/70 Robusta",
+       "fa": "۳۰/۷۰ ربوستا",
+       "mood": "energy",
+       "hEn": "Bold, strong and energising",
+       "hFa": "پرقدرت و پرانرژی"
+      }
+     ]
+    }
+   ],
+   "gv": 1
+  },
+  {
+   "id": "caramel-macchiato",
+   "catKey": "espresso-bar",
+   "nameEn": "Caramel Macchiato",
+   "nameFa": "کارامل ماکیاتو",
+   "descEn": "Steamed milk, espresso and a caramel drizzle on top.",
+   "descFa": "شیر بخارداده، اسپرسو و سس کارامل روی آن.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "☕",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "caramel-macchiato:0",
+     "labelEn": "50/50 Blend",
+     "labelFa": "۵۰/۵۰",
+     "price": 118000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      1
+     ]
+    },
+    {
+     "id": "caramel-macchiato:1",
+     "labelEn": "100% Arabica",
+     "labelFa": "۱۰۰٪ عربیکا",
+     "price": 118000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      0
+     ]
+    },
+    {
+     "id": "caramel-macchiato:2",
+     "labelEn": "30/70 Robusta",
+     "labelFa": "۳۰/۷۰ ربوستا",
+     "price": 118000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      2
+     ]
+    }
+   ],
+   "art": "cup:caramel:foam,drizzle",
+   "groups": [
+    {
+     "k": "blend",
+     "en": "Coffee blend (Arabica / Robusta)",
+     "fa": "لاین قهوه (عربیکا / ربوستا)",
+     "def": 1,
+     "opts": [
+      {
+       "en": "100% Arabica",
+       "fa": "۱۰۰٪ عربیکا",
+       "mood": "chill",
+       "hEn": "Smooth, mellow and calm",
+       "hFa": "ملایم، نرم و آرام"
+      },
+      {
+       "en": "50/50 Blend",
+       "fa": "۵۰/۵۰",
+       "mood": "ok",
+       "hEn": "Balanced and cheerful",
+       "hFa": "متعادل و سرحال"
+      },
+      {
+       "en": "30/70 Robusta",
+       "fa": "۳۰/۷۰ ربوستا",
+       "mood": "energy",
+       "hEn": "Bold, strong and energising",
+       "hFa": "پرقدرت و پرانرژی"
+      }
+     ]
+    }
+   ],
+   "gv": 1
+  },
+  {
+   "id": "mocha",
+   "catKey": "espresso-bar",
+   "nameEn": "Mocha",
+   "nameFa": "موکا",
+   "descEn": "Espresso and chocolate blended with steamed milk.",
+   "descFa": "اسپرسو و شکلات همراه با شیر بخارداده.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "☕",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "mocha:0",
+     "labelEn": "50/50 Blend",
+     "labelFa": "۵۰/۵۰",
+     "price": 125000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      1
+     ]
+    },
+    {
+     "id": "mocha:1",
+     "labelEn": "100% Arabica",
+     "labelFa": "۱۰۰٪ عربیکا",
+     "price": 125000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      0
+     ]
+    },
+    {
+     "id": "mocha:2",
+     "labelEn": "30/70 Robusta",
+     "labelFa": "۳۰/۷۰ ربوستا",
+     "price": 125000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      2
+     ]
+    }
+   ],
+   "art": "cup:mocha:foam",
+   "groups": [
+    {
+     "k": "blend",
+     "en": "Coffee blend (Arabica / Robusta)",
+     "fa": "لاین قهوه (عربیکا / ربوستا)",
+     "def": 1,
+     "opts": [
+      {
+       "en": "100% Arabica",
+       "fa": "۱۰۰٪ عربیکا",
+       "mood": "chill",
+       "hEn": "Smooth, mellow and calm",
+       "hFa": "ملایم، نرم و آرام"
+      },
+      {
+       "en": "50/50 Blend",
+       "fa": "۵۰/۵۰",
+       "mood": "ok",
+       "hEn": "Balanced and cheerful",
+       "hFa": "متعادل و سرحال"
+      },
+      {
+       "en": "30/70 Robusta",
+       "fa": "۳۰/۷۰ ربوستا",
+       "mood": "energy",
+       "hEn": "Bold, strong and energising",
+       "hFa": "پرقدرت و پرانرژی"
+      }
+     ]
+    }
+   ],
+   "gv": 1
+  },
+  {
+   "id": "mocha-cream",
+   "catKey": "espresso-bar",
+   "nameEn": "Mocha Cream",
+   "nameFa": "موکا کرم",
+   "descEn": "Our mocha topped with a cloud of whipped cream.",
+   "descFa": "موکا با ابری از خامهٔ زده روی آن.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "☕",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "mocha-cream:0",
+     "labelEn": "50/50 Blend",
+     "labelFa": "۵۰/۵۰",
+     "price": 140000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      1
+     ]
+    },
+    {
+     "id": "mocha-cream:1",
+     "labelEn": "100% Arabica",
+     "labelFa": "۱۰۰٪ عربیکا",
+     "price": 140000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      0
+     ]
+    },
+    {
+     "id": "mocha-cream:2",
+     "labelEn": "30/70 Robusta",
+     "labelFa": "۳۰/۷۰ ربوستا",
+     "price": 140000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      2
+     ]
+    }
+   ],
+   "art": "cup:mocha:cream",
+   "groups": [
+    {
+     "k": "blend",
+     "en": "Coffee blend (Arabica / Robusta)",
+     "fa": "لاین قهوه (عربیکا / ربوستا)",
+     "def": 1,
+     "opts": [
+      {
+       "en": "100% Arabica",
+       "fa": "۱۰۰٪ عربیکا",
+       "mood": "chill",
+       "hEn": "Smooth, mellow and calm",
+       "hFa": "ملایم، نرم و آرام"
+      },
+      {
+       "en": "50/50 Blend",
+       "fa": "۵۰/۵۰",
+       "mood": "ok",
+       "hEn": "Balanced and cheerful",
+       "hFa": "متعادل و سرحال"
+      },
+      {
+       "en": "30/70 Robusta",
+       "fa": "۳۰/۷۰ ربوستا",
+       "mood": "energy",
+       "hEn": "Bold, strong and energising",
+       "hFa": "پرقدرت و پرانرژی"
+      }
+     ]
+    }
+   ],
+   "gv": 1
+  },
+  {
+   "id": "iced-americano",
+   "catKey": "iced-coffee",
+   "nameEn": "Iced Americano",
+   "nameFa": "آیس آمریکانو",
+   "descEn": "Espresso over ice and cold water. Crisp and refreshing.",
+   "descFa": "اسپرسو روی یخ و آب سرد؛ خنک و شفاف.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "🧊",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "iced-americano:0",
+     "labelEn": "50/50 Blend",
+     "labelFa": "۵۰/۵۰",
+     "price": 69000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      1
+     ]
+    },
+    {
+     "id": "iced-americano:1",
+     "labelEn": "100% Arabica",
+     "labelFa": "۱۰۰٪ عربیکا",
+     "price": 69000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      0
+     ]
+    },
+    {
+     "id": "iced-americano:2",
+     "labelEn": "30/70 Robusta",
+     "labelFa": "۳۰/۷۰ ربوستا",
+     "price": 69000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      2
+     ]
+    }
+   ],
+   "art": "tall:coffee:ice",
+   "groups": [
+    {
+     "k": "blend",
+     "en": "Coffee blend (Arabica / Robusta)",
+     "fa": "لاین قهوه (عربیکا / ربوستا)",
+     "def": 1,
+     "opts": [
+      {
+       "en": "100% Arabica",
+       "fa": "۱۰۰٪ عربیکا",
+       "mood": "chill",
+       "hEn": "Smooth, mellow and calm",
+       "hFa": "ملایم، نرم و آرام"
+      },
+      {
+       "en": "50/50 Blend",
+       "fa": "۵۰/۵۰",
+       "mood": "ok",
+       "hEn": "Balanced and cheerful",
+       "hFa": "متعادل و سرحال"
+      },
+      {
+       "en": "30/70 Robusta",
+       "fa": "۳۰/۷۰ ربوستا",
+       "mood": "energy",
+       "hEn": "Bold, strong and energising",
+       "hFa": "پرقدرت و پرانرژی"
+      }
+     ]
+    }
+   ],
+   "gv": 1
+  },
+  {
+   "id": "iced-latte",
+   "catKey": "iced-coffee",
+   "nameEn": "Iced Latte",
+   "nameFa": "آیس لاته",
+   "descEn": "Espresso poured over cold milk and ice.",
+   "descFa": "اسپرسو روی شیر سرد و یخ.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "🧊",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "iced-latte:0",
+     "labelEn": "50/50 Blend",
+     "labelFa": "۵۰/۵۰",
+     "price": 79000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      1
+     ]
+    },
+    {
+     "id": "iced-latte:1",
+     "labelEn": "100% Arabica",
+     "labelFa": "۱۰۰٪ عربیکا",
+     "price": 79000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      0
+     ]
+    },
+    {
+     "id": "iced-latte:2",
+     "labelEn": "30/70 Robusta",
+     "labelFa": "۳۰/۷۰ ربوستا",
+     "price": 79000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      2
+     ]
+    }
+   ],
+   "art": "tall:milk+coffee:ice,straw",
+   "groups": [
+    {
+     "k": "blend",
+     "en": "Coffee blend (Arabica / Robusta)",
+     "fa": "لاین قهوه (عربیکا / ربوستا)",
+     "def": 1,
+     "opts": [
+      {
+       "en": "100% Arabica",
+       "fa": "۱۰۰٪ عربیکا",
+       "mood": "chill",
+       "hEn": "Smooth, mellow and calm",
+       "hFa": "ملایم، نرم و آرام"
+      },
+      {
+       "en": "50/50 Blend",
+       "fa": "۵۰/۵۰",
+       "mood": "ok",
+       "hEn": "Balanced and cheerful",
+       "hFa": "متعادل و سرحال"
+      },
+      {
+       "en": "30/70 Robusta",
+       "fa": "۳۰/۷۰ ربوستا",
+       "mood": "energy",
+       "hEn": "Bold, strong and energising",
+       "hFa": "پرقدرت و پرانرژی"
+      }
+     ]
+    }
+   ],
+   "gv": 1
+  },
+  {
+   "id": "iced-caramel-macchiato",
+   "catKey": "iced-coffee",
+   "nameEn": "Iced Caramel Macchiato",
+   "nameFa": "آیس کارامل ماکیاتو",
+   "descEn": "Cold milk, espresso and caramel over ice.",
+   "descFa": "شیر سرد، اسپرسو و کارامل روی یخ.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "🧊",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "iced-caramel-macchiato:0",
+     "labelEn": "50/50 Blend",
+     "labelFa": "۵۰/۵۰",
+     "price": 79000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      1
+     ]
+    },
+    {
+     "id": "iced-caramel-macchiato:1",
+     "labelEn": "100% Arabica",
+     "labelFa": "۱۰۰٪ عربیکا",
+     "price": 79000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      0
+     ]
+    },
+    {
+     "id": "iced-caramel-macchiato:2",
+     "labelEn": "30/70 Robusta",
+     "labelFa": "۳۰/۷۰ ربوستا",
+     "price": 79000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      2
+     ]
+    }
+   ],
+   "art": "tall:milk+caramel:ice,straw",
+   "groups": [
+    {
+     "k": "blend",
+     "en": "Coffee blend (Arabica / Robusta)",
+     "fa": "لاین قهوه (عربیکا / ربوستا)",
+     "def": 1,
+     "opts": [
+      {
+       "en": "100% Arabica",
+       "fa": "۱۰۰٪ عربیکا",
+       "mood": "chill",
+       "hEn": "Smooth, mellow and calm",
+       "hFa": "ملایم، نرم و آرام"
+      },
+      {
+       "en": "50/50 Blend",
+       "fa": "۵۰/۵۰",
+       "mood": "ok",
+       "hEn": "Balanced and cheerful",
+       "hFa": "متعادل و سرحال"
+      },
+      {
+       "en": "30/70 Robusta",
+       "fa": "۳۰/۷۰ ربوستا",
+       "mood": "energy",
+       "hEn": "Bold, strong and energising",
+       "hFa": "پرقدرت و پرانرژی"
+      }
+     ]
+    }
+   ],
+   "gv": 1
+  },
+  {
+   "id": "iced-mocha",
+   "catKey": "iced-coffee",
+   "nameEn": "Iced Mocha",
+   "nameFa": "آیس موکا",
+   "descEn": "Iced espresso and chocolate with milk, topped with cream.",
+   "descFa": "اسپرسو و شکلات سرد با شیر و خامه روی آن.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "🧊",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "iced-mocha:0",
+     "labelEn": "50/50 Blend",
+     "labelFa": "۵۰/۵۰",
+     "price": 88000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      1
+     ]
+    },
+    {
+     "id": "iced-mocha:1",
+     "labelEn": "100% Arabica",
+     "labelFa": "۱۰۰٪ عربیکا",
+     "price": 88000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      0
+     ]
+    },
+    {
+     "id": "iced-mocha:2",
+     "labelEn": "30/70 Robusta",
+     "labelFa": "۳۰/۷۰ ربوستا",
+     "price": 88000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      2
+     ]
+    }
+   ],
+   "art": "tall:mocha:ice,straw,cream",
+   "groups": [
+    {
+     "k": "blend",
+     "en": "Coffee blend (Arabica / Robusta)",
+     "fa": "لاین قهوه (عربیکا / ربوستا)",
+     "def": 1,
+     "opts": [
+      {
+       "en": "100% Arabica",
+       "fa": "۱۰۰٪ عربیکا",
+       "mood": "chill",
+       "hEn": "Smooth, mellow and calm",
+       "hFa": "ملایم، نرم و آرام"
+      },
+      {
+       "en": "50/50 Blend",
+       "fa": "۵۰/۵۰",
+       "mood": "ok",
+       "hEn": "Balanced and cheerful",
+       "hFa": "متعادل و سرحال"
+      },
+      {
+       "en": "30/70 Robusta",
+       "fa": "۳۰/۷۰ ربوستا",
+       "mood": "energy",
+       "hEn": "Bold, strong and energising",
+       "hFa": "پرقدرت و پرانرژی"
+      }
+     ]
+    }
+   ],
+   "gv": 1
+  },
+  {
+   "id": "frappuccino",
+   "catKey": "iced-coffee",
+   "nameEn": "Frappuccino",
+   "nameFa": "فراپاچینو",
+   "descEn": "A blended, frosty coffee drink finished with whipped cream.",
+   "descFa": "نوشیدنی قهوهٔ یخی و میکس‌شده با خامه روی آن.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "🧊",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "frappuccino:0",
+     "labelEn": "50/50 Blend",
+     "labelFa": "۵۰/۵۰",
+     "price": 91000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      1
+     ]
+    },
+    {
+     "id": "frappuccino:1",
+     "labelEn": "100% Arabica",
+     "labelFa": "۱۰۰٪ عربیکا",
+     "price": 91000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      0
+     ]
+    },
+    {
+     "id": "frappuccino:2",
+     "labelEn": "30/70 Robusta",
+     "labelFa": "۳۰/۷۰ ربوستا",
+     "price": 91000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      2
+     ]
+    }
+   ],
+   "art": "tall:caramel:ice,straw,cream",
+   "groups": [
+    {
+     "k": "blend",
+     "en": "Coffee blend (Arabica / Robusta)",
+     "fa": "لاین قهوه (عربیکا / ربوستا)",
+     "def": 1,
+     "opts": [
+      {
+       "en": "100% Arabica",
+       "fa": "۱۰۰٪ عربیکا",
+       "mood": "chill",
+       "hEn": "Smooth, mellow and calm",
+       "hFa": "ملایم، نرم و آرام"
+      },
+      {
+       "en": "50/50 Blend",
+       "fa": "۵۰/۵۰",
+       "mood": "ok",
+       "hEn": "Balanced and cheerful",
+       "hFa": "متعادل و سرحال"
+      },
+      {
+       "en": "30/70 Robusta",
+       "fa": "۳۰/۷۰ ربوستا",
+       "mood": "energy",
+       "hEn": "Bold, strong and energising",
+       "hFa": "پرقدرت و پرانرژی"
+      }
+     ]
+    }
+   ],
+   "gv": 1
+  },
+  {
+   "id": "orange-coffee",
+   "catKey": "iced-coffee",
+   "nameEn": "Orange Coffee",
+   "nameFa": "اورنج کافی",
+   "descEn": "Coffee paired with orange for a bright, citrusy twist.",
+   "descFa": "قهوه در کنار پرتقال؛ ترکیبی تازه و مرکباتی.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "🧊",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "orange-coffee:0",
+     "labelEn": "50/50 Blend",
+     "labelFa": "۵۰/۵۰",
+     "price": 91000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      1
+     ]
+    },
+    {
+     "id": "orange-coffee:1",
+     "labelEn": "100% Arabica",
+     "labelFa": "۱۰۰٪ عربیکا",
+     "price": 91000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      0
+     ]
+    },
+    {
+     "id": "orange-coffee:2",
+     "labelEn": "30/70 Robusta",
+     "labelFa": "۳۰/۷۰ ربوستا",
+     "price": 91000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      2
+     ]
+    }
+   ],
+   "art": "tall:orange+coffee:ice,orange",
+   "groups": [
+    {
+     "k": "blend",
+     "en": "Coffee blend (Arabica / Robusta)",
+     "fa": "لاین قهوه (عربیکا / ربوستا)",
+     "def": 1,
+     "opts": [
+      {
+       "en": "100% Arabica",
+       "fa": "۱۰۰٪ عربیکا",
+       "mood": "chill",
+       "hEn": "Smooth, mellow and calm",
+       "hFa": "ملایم، نرم و آرام"
+      },
+      {
+       "en": "50/50 Blend",
+       "fa": "۵۰/۵۰",
+       "mood": "ok",
+       "hEn": "Balanced and cheerful",
+       "hFa": "متعادل و سرحال"
+      },
+      {
+       "en": "30/70 Robusta",
+       "fa": "۳۰/۷۰ ربوستا",
+       "mood": "energy",
+       "hEn": "Bold, strong and energising",
+       "hFa": "پرقدرت و پرانرژی"
+      }
+     ]
+    }
+   ],
+   "gv": 1
+  },
+  {
+   "id": "cola-coffee",
+   "catKey": "iced-coffee",
+   "nameEn": "Cola Coffee",
+   "nameFa": "کولا کافی",
+   "descEn": "Coffee and cola over ice. Sweet, fizzy and unexpected.",
+   "descFa": "قهوه و نوشابهٔ کولا روی یخ؛ شیرین، گازدار و غیرمنتظره.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "🧊",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "cola-coffee:0",
+     "labelEn": "50/50 Blend",
+     "labelFa": "۵۰/۵۰",
+     "price": 94000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      1
+     ]
+    },
+    {
+     "id": "cola-coffee:1",
+     "labelEn": "100% Arabica",
+     "labelFa": "۱۰۰٪ عربیکا",
+     "price": 94000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      0
+     ]
+    },
+    {
+     "id": "cola-coffee:2",
+     "labelEn": "30/70 Robusta",
+     "labelFa": "۳۰/۷۰ ربوستا",
+     "price": 94000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      2
+     ]
+    }
+   ],
+   "art": "tall:cola:ice",
+   "groups": [
+    {
+     "k": "blend",
+     "en": "Coffee blend (Arabica / Robusta)",
+     "fa": "لاین قهوه (عربیکا / ربوستا)",
+     "def": 1,
+     "opts": [
+      {
+       "en": "100% Arabica",
+       "fa": "۱۰۰٪ عربیکا",
+       "mood": "chill",
+       "hEn": "Smooth, mellow and calm",
+       "hFa": "ملایم، نرم و آرام"
+      },
+      {
+       "en": "50/50 Blend",
+       "fa": "۵۰/۵۰",
+       "mood": "ok",
+       "hEn": "Balanced and cheerful",
+       "hFa": "متعادل و سرحال"
+      },
+      {
+       "en": "30/70 Robusta",
+       "fa": "۳۰/۷۰ ربوستا",
+       "mood": "energy",
+       "hEn": "Bold, strong and energising",
+       "hFa": "پرقدرت و پرانرژی"
+      }
+     ]
+    }
+   ],
+   "gv": 1
+  },
+  {
+   "id": "hot-latte",
+   "catKey": "iced-coffee",
+   "nameEn": "Hot Latte",
+   "nameFa": "هات لاته",
+   "descEn": "Our latte served hot: espresso with steamed milk.",
+   "descFa": "لاتهٔ گرم ما: اسپرسو با شیر بخارداده.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "🧊",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "hot-latte:0",
+     "labelEn": "50/50 Blend",
+     "labelFa": "۵۰/۵۰",
+     "price": 92000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      1
+     ]
+    },
+    {
+     "id": "hot-latte:1",
+     "labelEn": "100% Arabica",
+     "labelFa": "۱۰۰٪ عربیکا",
+     "price": 92000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      0
+     ]
+    },
+    {
+     "id": "hot-latte:2",
+     "labelEn": "30/70 Robusta",
+     "labelFa": "۳۰/۷۰ ربوستا",
+     "price": 92000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      2
+     ]
+    }
+   ],
+   "art": "cup:coffee:foam,heart",
+   "groups": [
+    {
+     "k": "blend",
+     "en": "Coffee blend (Arabica / Robusta)",
+     "fa": "لاین قهوه (عربیکا / ربوستا)",
+     "def": 1,
+     "opts": [
+      {
+       "en": "100% Arabica",
+       "fa": "۱۰۰٪ عربیکا",
+       "mood": "chill",
+       "hEn": "Smooth, mellow and calm",
+       "hFa": "ملایم، نرم و آرام"
+      },
+      {
+       "en": "50/50 Blend",
+       "fa": "۵۰/۵۰",
+       "mood": "ok",
+       "hEn": "Balanced and cheerful",
+       "hFa": "متعادل و سرحال"
+      },
+      {
+       "en": "30/70 Robusta",
+       "fa": "۳۰/۷۰ ربوستا",
+       "mood": "energy",
+       "hEn": "Bold, strong and energising",
+       "hFa": "پرقدرت و پرانرژی"
+      }
+     ]
+    }
+   ],
+   "gv": 1
+  },
+  {
+   "id": "tonic-presso",
+   "catKey": "iced-coffee",
+   "nameEn": "Tonic Presso",
+   "nameFa": "تونیک پرسو",
+   "descEn": "Ask our barista what's in it today.",
+   "descFa": "دربارهٔ ترکیب امروز از باریستا بپرسید.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "",
+   "art": "tall:white+espresso:ice,straw,lemon",
+   "featured": false,
+   "active": false,
+   "variants": [
+    {
+     "id": "tonic-presso:0",
+     "labelEn": "50/50 Blend",
+     "labelFa": "۵۰/۵۰",
+     "price": 0,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      1
+     ]
+    },
+    {
+     "id": "tonic-presso:1",
+     "labelEn": "100% Arabica",
+     "labelFa": "۱۰۰٪ عربیکا",
+     "price": 0,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      0
+     ]
+    },
+    {
+     "id": "tonic-presso:2",
+     "labelEn": "30/70 Robusta",
+     "labelFa": "۳۰/۷۰ ربوستا",
+     "price": 0,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      2
+     ]
+    }
+   ],
+   "groups": [
+    {
+     "k": "blend",
+     "en": "Coffee blend (Arabica / Robusta)",
+     "fa": "لاین قهوه (عربیکا / ربوستا)",
+     "def": 1,
+     "opts": [
+      {
+       "en": "100% Arabica",
+       "fa": "۱۰۰٪ عربیکا",
+       "mood": "chill",
+       "hEn": "Smooth, mellow and calm",
+       "hFa": "ملایم، نرم و آرام"
+      },
+      {
+       "en": "50/50 Blend",
+       "fa": "۵۰/۵۰",
+       "mood": "ok",
+       "hEn": "Balanced and cheerful",
+       "hFa": "متعادل و سرحال"
+      },
+      {
+       "en": "30/70 Robusta",
+       "fa": "۳۰/۷۰ ربوستا",
+       "mood": "energy",
+       "hEn": "Bold, strong and energising",
+       "hFa": "پرقدرت و پرانرژی"
+      }
+     ]
+    }
+   ],
+   "gv": 1
+  },
+  {
+   "id": "turkish",
+   "catKey": "brew",
+   "nameEn": "Turkish",
+   "nameFa": "ترک",
+   "descEn": "Finely ground coffee simmered slowly in a cezve and served unfiltered. Choose classic, with cardamom or dark roast.",
+   "descFa": "قهوهٔ آسیاب‌شدهٔ بسیار ریز که آرام در جزوه دم می‌شود و بدون صافی سرو می‌شود. کلاسیک، با هل یا رست تیره را انتخاب کنید.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "☕",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "turkish:0",
+     "labelEn": "Classic",
+     "labelFa": "کلاسیک",
+     "price": 118000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      0
+     ]
+    },
+    {
+     "id": "turkish:1",
+     "labelEn": "With cardamom",
+     "labelFa": "با هل",
+     "price": 118000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      1
+     ]
+    },
+    {
+     "id": "turkish:2",
+     "labelEn": "Dark roast",
+     "labelFa": "رست تیره",
+     "price": 118000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      2
+     ]
+    }
+   ],
+   "art": "cezve:coffee",
+   "groups": [
+    {
+     "k": "type",
+     "en": "Type of coffee",
+     "fa": "نوع قهوه",
+     "def": 0,
+     "opts": [
+      {
+       "en": "Classic",
+       "fa": "کلاسیک",
+       "hEn": "Plain Turkish coffee",
+       "hFa": "قهوهٔ ترک ساده"
+      },
+      {
+       "en": "With cardamom",
+       "fa": "با هل",
+       "hEn": "Spiced with cardamom",
+       "hFa": "همراه با هل"
+      },
+      {
+       "en": "Dark roast",
+       "fa": "رست تیره",
+       "hEn": "Deep, bold and smoky",
+       "hFa": "غلیظ، پرقدرت و دودی"
+      }
+     ]
+    }
+   ],
+   "gv": 2
+  },
+  {
+   "id": "origami",
+   "catKey": "brew",
+   "nameEn": "Origami",
+   "nameFa": "اوریگامی",
+   "descEn": "Pour-over coffee brewed with an Origami dripper. Clean and aromatic.",
+   "descFa": "قهوهٔ دمی با دریپر اوریگامی؛ پاک و خوش‌عطر.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "☕",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "origami:0",
+     "labelEn": "Ethiopia",
+     "labelFa": "اتیوپی",
+     "price": 125000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      0
+     ],
+     "bean": "ethiopia"
+    },
+    {
+     "id": "origami:1",
+     "labelEn": "Indonesia",
+     "labelFa": "اندونزی",
+     "price": 125000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      1
+     ],
+     "bean": "indonesia"
+    }
+   ],
+   "art": "brew:coffee",
+   "groups": [
+    {
+     "k": "origin",
+     "en": "Specialty single origin",
+     "fa": "قهوهٔ اسپشیالیتی (تک‌خاستگاه)",
+     "def": 0,
+     "opts": [
+      {
+       "en": "Ethiopia",
+       "fa": "اتیوپی",
+       "bean": "ethiopia"
+      },
+      {
+       "en": "Indonesia",
+       "fa": "اندونزی",
+       "bean": "indonesia"
+      }
+     ]
+    }
+   ],
+   "gv": 2
+  },
+  {
+   "id": "hario-switch",
+   "catKey": "brew",
+   "nameEn": "Hario Switch",
+   "nameFa": "هریو سویچ",
+   "descEn": "Brewed with a Hario Switch dripper, which blends steeping and pour-over for a balanced cup.",
+   "descFa": "دم‌شده با هاریو سوییچ که دم‌کردن غوطه‌ور و پوراور را ترکیب می‌کند؛ فنجانی متعادل.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "☕",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "hario-switch:0",
+     "labelEn": "Ethiopia",
+     "labelFa": "اتیوپی",
+     "price": 140000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      0
+     ],
+     "bean": "ethiopia"
+    },
+    {
+     "id": "hario-switch:1",
+     "labelEn": "Indonesia",
+     "labelFa": "اندونزی",
+     "price": 140000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      1
+     ],
+     "bean": "indonesia"
+    }
+   ],
+   "art": "brew:coffee:switch",
+   "groups": [
+    {
+     "k": "origin",
+     "en": "Specialty single origin",
+     "fa": "قهوهٔ اسپشیالیتی (تک‌خاستگاه)",
+     "def": 0,
+     "opts": [
+      {
+       "en": "Ethiopia",
+       "fa": "اتیوپی",
+       "bean": "ethiopia"
+      },
+      {
+       "en": "Indonesia",
+       "fa": "اندونزی",
+       "bean": "indonesia"
+      }
+     ]
+    }
+   ],
+   "gv": 2
+  },
+  {
+   "id": "matcha-latte",
+   "catKey": "matcha-bar",
+   "nameEn": "Matcha Latte",
+   "nameFa": "ماچا لاته",
+   "descEn": "Matcha whisked with steamed milk. Earthy, smooth and gently sweet.",
+   "descFa": "ماچا با شیر بخارداده؛ نرم و ملایم با طعمی گیاهی.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "🍵",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "matcha-latte:0",
+     "labelEn": "Regular",
+     "labelFa": "معمولی",
+     "price": 83000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    }
+   ],
+   "art": "cup:matcha:foam"
+  },
+  {
+   "id": "iced-matcha-latte",
+   "catKey": "matcha-bar",
+   "nameEn": "Iced Matcha Latte",
+   "nameFa": "آیس ماچا لاته",
+   "descEn": "Matcha poured over cold milk and ice.",
+   "descFa": "ماچا روی شیر سرد و یخ.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "🍵",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "iced-matcha-latte:0",
+     "labelEn": "Regular",
+     "labelFa": "معمولی",
+     "price": 98000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    }
+   ],
+   "art": "tall:milk+matcha:ice,straw"
+  },
+  {
+   "id": "matcha-shake",
+   "catKey": "matcha-bar",
+   "nameEn": "Matcha Shake",
+   "nameFa": "ماچا شیک",
+   "descEn": "A thick, creamy shake made with matcha.",
+   "descFa": "شیک غلیظ و خامه‌ای با طعم ماچا.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "🍵",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "matcha-shake:0",
+     "labelEn": "Regular",
+     "labelFa": "معمولی",
+     "price": 118000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    }
+   ],
+   "art": "shake:matcha"
+  },
+  {
+   "id": "iced-saffron-matcha",
+   "catKey": "matcha-bar",
+   "nameEn": "Iced Saffron Matcha",
+   "nameFa": "آیس ماچا زعفرونی",
+   "descEn": "Iced matcha with saffron. Floral, golden and refreshing.",
+   "descFa": "ماچای سرد با زعفران؛ خوش‌عطر و خنک.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "🍵",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "iced-saffron-matcha:0",
+     "labelEn": "Regular",
+     "labelFa": "معمولی",
+     "price": 145000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    }
+   ],
+   "art": "tall:saffron+matcha:ice,straw"
+  },
+  {
+   "id": "iced-strawberry-matcha",
+   "catKey": "matcha-bar",
+   "nameEn": "Iced Strawberry Matcha",
+   "nameFa": "آیس ماچا توت‌فرنگی",
+   "descEn": "Iced matcha layered with strawberry.",
+   "descFa": "ماچای سرد همراه با توت‌فرنگی.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "🍵",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "iced-strawberry-matcha:0",
+     "labelEn": "Regular",
+     "labelFa": "معمولی",
+     "price": 135000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    }
+   ],
+   "art": "tall:pink+matcha:ice,straw,strawberry"
+  },
+  {
+   "id": "iced-mango-matcha",
+   "catKey": "matcha-bar",
+   "nameEn": "Iced Mango Matcha",
+   "nameFa": "آیس ماچا انبه",
+   "descEn": "Iced matcha layered with sweet mango.",
+   "descFa": "ماچای سرد همراه با انبهٔ شیرین.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "🍵",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "iced-mango-matcha:0",
+     "labelEn": "Regular",
+     "labelFa": "معمولی",
+     "price": 127000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    }
+   ],
+   "art": "tall:mango+matcha:ice,straw"
+  },
+  {
+   "id": "spirulina-latte",
+   "catKey": "matcha-bar",
+   "nameEn": "Spirulina Latte",
+   "nameFa": "اسپیرولینا لاته",
+   "descEn": "Steamed milk with spirulina: a vivid blue-green colour and a mild, earthy taste.",
+   "descFa": "شیر بخارداده با اسپیرولینا؛ رنگی آبی‌سبز و طعمی ملایم و گیاهی.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "🍵",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "spirulina-latte:0",
+     "labelEn": "Regular",
+     "labelFa": "معمولی",
+     "price": 118000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    }
+   ],
+   "art": "cup:blue:foam"
+  },
+  {
+   "id": "vakan-matcha",
+   "catKey": "vakan-bar",
+   "nameEn": "Vegan Matcha",
+   "nameFa": "ماچا وگن",
+   "descEn": "Plant-based matcha: choose almond or hazelnut milk.",
+   "descFa": "ماچای گیاهی؛ شیر بادام یا شیر فندق را انتخاب کنید.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "🍵",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "vakan-matcha:0",
+     "labelEn": "Almond milk",
+     "labelFa": "شیر بادام",
+     "price": 135000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      0
+     ]
+    },
+    {
+     "id": "vakan-matcha:1",
+     "labelEn": "Hazelnut milk",
+     "labelFa": "شیر فندق",
+     "price": 135000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      1
+     ]
+    }
+   ],
+   "art": "cup:matcha:foam",
+   "groups": [
+    {
+     "k": "milk",
+     "en": "Milk",
+     "fa": "شیر",
+     "def": 0,
+     "opts": [
+      {
+       "en": "Almond milk",
+       "fa": "شیر بادام"
+      },
+      {
+       "en": "Hazelnut milk",
+       "fa": "شیر فندق"
+      }
+     ]
+    }
+   ],
+   "gv": 1
+  },
+  {
+   "id": "vakan-latte",
+   "catKey": "vakan-bar",
+   "nameEn": "Vegan Latte",
+   "nameFa": "لاته وگن",
+   "descEn": "Plant-based latte: choose your coffee blend and almond or hazelnut milk.",
+   "descFa": "لاتهٔ گیاهی؛ لاین قهوه و شیر بادام یا فندق را انتخاب کنید.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "🍵",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "vakan-latte:0",
+     "labelEn": "50/50 Blend · Almond milk",
+     "labelFa": "۵۰/۵۰ · شیر بادام",
+     "price": 125000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      1,
+      0
+     ]
+    },
+    {
+     "id": "vakan-latte:1",
+     "labelEn": "100% Arabica · Almond milk",
+     "labelFa": "۱۰۰٪ عربیکا · شیر بادام",
+     "price": 125000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      0,
+      0
+     ]
+    },
+    {
+     "id": "vakan-latte:2",
+     "labelEn": "100% Arabica · Hazelnut milk",
+     "labelFa": "۱۰۰٪ عربیکا · شیر فندق",
+     "price": 125000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      0,
+      1
+     ]
+    },
+    {
+     "id": "vakan-latte:3",
+     "labelEn": "50/50 Blend · Hazelnut milk",
+     "labelFa": "۵۰/۵۰ · شیر فندق",
+     "price": 125000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      1,
+      1
+     ]
+    },
+    {
+     "id": "vakan-latte:4",
+     "labelEn": "30/70 Robusta · Almond milk",
+     "labelFa": "۳۰/۷۰ ربوستا · شیر بادام",
+     "price": 125000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      2,
+      0
+     ]
+    },
+    {
+     "id": "vakan-latte:5",
+     "labelEn": "30/70 Robusta · Hazelnut milk",
+     "labelFa": "۳۰/۷۰ ربوستا · شیر فندق",
+     "price": 125000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      2,
+      1
+     ]
+    }
+   ],
+   "art": "cup:coffee:foam,heart",
+   "groups": [
+    {
+     "k": "blend",
+     "en": "Coffee blend (Arabica / Robusta)",
+     "fa": "لاین قهوه (عربیکا / ربوستا)",
+     "def": 1,
+     "opts": [
+      {
+       "en": "100% Arabica",
+       "fa": "۱۰۰٪ عربیکا",
+       "mood": "chill",
+       "hEn": "Smooth, mellow and calm",
+       "hFa": "ملایم، نرم و آرام"
+      },
+      {
+       "en": "50/50 Blend",
+       "fa": "۵۰/۵۰",
+       "mood": "ok",
+       "hEn": "Balanced and cheerful",
+       "hFa": "متعادل و سرحال"
+      },
+      {
+       "en": "30/70 Robusta",
+       "fa": "۳۰/۷۰ ربوستا",
+       "mood": "energy",
+       "hEn": "Bold, strong and energising",
+       "hFa": "پرقدرت و پرانرژی"
+      }
+     ]
+    },
+    {
+     "k": "milk",
+     "en": "Milk",
+     "fa": "شیر",
+     "def": 0,
+     "opts": [
+      {
+       "en": "Almond milk",
+       "fa": "شیر بادام"
+      },
+      {
+       "en": "Hazelnut milk",
+       "fa": "شیر فندق"
+      }
+     ]
+    }
+   ],
+   "gv": 1
+  },
+  {
+   "id": "vanilla-shake",
+   "catKey": "milkshake",
+   "nameEn": "Vanilla Shake",
+   "nameFa": "شیک وانیل",
+   "descEn": "A classic creamy vanilla milkshake.",
+   "descFa": "میلک‌شیک کلاسیک و خامه‌ای وانیلی.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "🥤",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "vanilla-shake:0",
+     "labelEn": "Regular",
+     "labelFa": "معمولی",
+     "price": 92000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    }
+   ],
+   "art": "shake:vanilla"
+  },
+  {
+   "id": "chocolate-shake",
+   "catKey": "milkshake",
+   "nameEn": "Chocolate Shake",
+   "nameFa": "شیک شکلات",
+   "descEn": "A rich chocolate milkshake topped with cream.",
+   "descFa": "میلک‌شیک شکلاتی غلیظ با خامه روی آن.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "🥤",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "chocolate-shake:0",
+     "labelEn": "Regular",
+     "labelFa": "معمولی",
+     "price": 98000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    }
+   ],
+   "art": "shake:choc"
+  },
+  {
+   "id": "nutella-shake",
+   "catKey": "milkshake",
+   "nameEn": "Nutella Shake",
+   "nameFa": "شیک نوتلا",
+   "descEn": "A thick milkshake blended with hazelnut-chocolate spread.",
+   "descFa": "میلک‌شیک غلیظ با کرم فندق و شکلات.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "🥤",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "nutella-shake:0",
+     "labelEn": "Regular",
+     "labelFa": "معمولی",
+     "price": 147000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    }
+   ],
+   "art": "shake:nutella"
+  },
+  {
+   "id": "nescafe-shake",
+   "catKey": "milkshake",
+   "nameEn": "Nescafé Shake",
+   "nameFa": "شیک نسکافه",
+   "descEn": "A creamy coffee milkshake made with Nescafé.",
+   "descFa": "میلک‌شیک قهوه‌ای و خامه‌ای با نسکافه.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "🥤",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "nescafe-shake:0",
+     "labelEn": "Regular",
+     "labelFa": "معمولی",
+     "price": 130000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    }
+   ],
+   "art": "shake:coffee"
+  },
+  {
+   "id": "lotus-shake",
+   "catKey": "milkshake",
+   "nameEn": "Lotus Shake",
+   "nameFa": "شیک لوتوس",
+   "descEn": "A milkshake with caramelised Lotus biscuit flavour.",
+   "descFa": "میلک‌شیک با طعم بیسکویت کاراملی لوتوس.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "🥤",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "lotus-shake:0",
+     "labelEn": "Regular",
+     "labelFa": "معمولی",
+     "price": 130000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    }
+   ],
+   "art": "shake:lotus"
+  },
+  {
+   "id": "peanut-shake",
+   "catKey": "milkshake",
+   "nameEn": "Peanut Shake",
+   "nameFa": "شیک پینات",
+   "descEn": "A creamy milkshake with roasted peanut flavour.",
+   "descFa": "میلک‌شیک خامه‌ای با طعم بادام‌زمینی برشته.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "🥤",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "peanut-shake:0",
+     "labelEn": "Regular",
+     "labelFa": "معمولی",
+     "price": 165000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    }
+   ],
+   "art": "shake:peanut"
+  },
+  {
+   "id": "strawberry-shake",
+   "catKey": "milkshake",
+   "nameEn": "Strawberry Shake",
+   "nameFa": "شیک توت‌فرنگی",
+   "descEn": "A sweet, fruity strawberry milkshake.",
+   "descFa": "میلک‌شیک شیرین و میوه‌ای توت‌فرنگی.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "🥤",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "strawberry-shake:0",
+     "labelEn": "Regular",
+     "labelFa": "معمولی",
+     "price": 125000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    }
+   ],
+   "art": "shake:pink"
+  },
+  {
+   "id": "oreo-shake",
+   "catKey": "milkshake",
+   "nameEn": "Oreo Shake",
+   "nameFa": "شیک اورئو",
+   "descEn": "Cookies-and-cream milkshake with Oreo crumbs.",
+   "descFa": "میلک‌شیک کوکی و خامه با خرده‌های اورئو.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "🥤",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "oreo-shake:0",
+     "labelEn": "Regular",
+     "labelFa": "معمولی",
+     "price": 125000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    }
+   ],
+   "art": "shake:oreo"
+  },
+  {
+   "id": "pro-shake",
+   "catKey": "milkshake",
+   "nameEn": "Pro Shake",
+   "nameFa": "پرو شیک",
+   "descEn": "Our Pro Shake. Ask our barista about today's blend.",
+   "descFa": "پرو شیک ما. دربارهٔ ترکیب امروز از باریستا بپرسید.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "🥤",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "pro-shake:0",
+     "labelEn": "Regular",
+     "labelFa": "معمولی",
+     "price": 135000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    }
+   ],
+   "art": "shake:vanilla"
+  },
+  {
+   "id": "mojito",
+   "catKey": "mocktail",
+   "nameEn": "Mojito",
+   "nameFa": "موهیتو",
+   "descEn": "Fresh mint and lime over ice. Alcohol-free.",
+   "descFa": "نعنای تازه و لیمو روی یخ؛ بدون الکل.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "🍹",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "mojito:0",
+     "labelEn": "Regular",
+     "labelFa": "معمولی",
+     "price": 99000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    }
+   ],
+   "art": "tall:lemon:ice,mint,lime,straw"
+  },
+  {
+   "id": "lemonade",
+   "catKey": "mocktail",
+   "nameEn": "Lemonade",
+   "nameFa": "لیموناد",
+   "descEn": "Freshly sour and sweet lemonade over ice.",
+   "descFa": "لیموناد ترش و شیرین روی یخ.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "🍹",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "lemonade:0",
+     "labelEn": "Regular",
+     "labelFa": "معمولی",
+     "price": 130000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    }
+   ],
+   "art": "tall:lemon:ice,lemon,straw"
+  },
+  {
+   "id": "sunrise",
+   "catKey": "mocktail",
+   "nameEn": "Sunrise",
+   "nameFa": "سان رایز",
+   "descEn": "A colourful layered mocktail in orange and red.",
+   "descFa": "موکتل رنگارنگ و لایه‌لایه در طیف نارنجی و قرمز.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "🍹",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "sunrise:0",
+     "labelEn": "Regular",
+     "labelFa": "معمولی",
+     "price": 140000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    }
+   ],
+   "art": "tall:orange+red:ice,orange,straw"
+  },
+  {
+   "id": "violet",
+   "catKey": "mocktail",
+   "nameEn": "Violet",
+   "nameFa": "وایولت",
+   "descEn": "Ask our barista what's in it today.",
+   "descFa": "دربارهٔ ترکیب امروز از باریستا بپرسید.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "",
+   "art": "tall:borage:ice,straw",
+   "featured": false,
+   "active": false,
+   "variants": [
+    {
+     "id": "violet:0",
+     "labelEn": "Regular",
+     "labelFa": "معمولی",
+     "price": 0,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    }
+   ]
+  },
+  {
+   "id": "amsterdam",
+   "catKey": "mocktail",
+   "nameEn": "Amsterdam",
+   "nameFa": "آمستردام",
+   "descEn": "Ask our barista what's in it today.",
+   "descFa": "دربارهٔ ترکیب امروز از باریستا بپرسید.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "",
+   "art": "tall:blue+pink:ice,straw,lemon",
+   "featured": false,
+   "active": false,
+   "variants": [
+    {
+     "id": "amsterdam:0",
+     "labelEn": "Regular",
+     "labelFa": "معمولی",
+     "price": 0,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    }
+   ]
+  },
+  {
+   "id": "redberry",
+   "catKey": "mocktail",
+   "nameEn": "Redberry",
+   "nameFa": "ردبری",
+   "descEn": "Ask our barista what's in it today.",
+   "descFa": "دربارهٔ ترکیب امروز از باریستا بپرسید.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "",
+   "art": "tall:red:ice,straw,strawberry",
+   "featured": false,
+   "active": false,
+   "variants": [
+    {
+     "id": "redberry:0",
+     "labelEn": "Regular",
+     "labelFa": "معمولی",
+     "price": 0,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    }
+   ]
+  },
+  {
+   "id": "shiraz",
+   "catKey": "mocktail",
+   "nameEn": "Shiraz",
+   "nameFa": "شیراز",
+   "descEn": "Ask our barista what's in it today.",
+   "descFa": "دربارهٔ ترکیب امروز از باریستا بپرسید.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "",
+   "art": "tall:borage+red:ice,straw",
+   "featured": false,
+   "active": false,
+   "variants": [
+    {
+     "id": "shiraz:0",
+     "labelEn": "Regular",
+     "labelFa": "معمولی",
+     "price": 0,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    }
+   ]
+  },
+  {
+   "id": "affogato",
+   "catKey": "desserts",
+   "nameEn": "Affogato",
+   "nameFa": "آفوگاتو",
+   "descEn": "Vanilla ice cream topped with a hot shot of espresso.",
+   "descFa": "بستنی وانیلی با یک شات اسپرسوی داغ روی آن.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "🍰",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "affogato:0",
+     "labelEn": "50/50 Blend",
+     "labelFa": "۵۰/۵۰",
+     "price": 145000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      1
+     ]
+    },
+    {
+     "id": "affogato:1",
+     "labelEn": "100% Arabica",
+     "labelFa": "۱۰۰٪ عربیکا",
+     "price": 145000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      0
+     ]
+    },
+    {
+     "id": "affogato:2",
+     "labelEn": "30/70 Robusta",
+     "labelFa": "۳۰/۷۰ ربوستا",
+     "price": 145000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      2
+     ]
+    }
+   ],
+   "art": "affogato",
+   "groups": [
+    {
+     "k": "blend",
+     "en": "Coffee blend (Arabica / Robusta)",
+     "fa": "لاین قهوه (عربیکا / ربوستا)",
+     "def": 1,
+     "opts": [
+      {
+       "en": "100% Arabica",
+       "fa": "۱۰۰٪ عربیکا",
+       "mood": "chill",
+       "hEn": "Smooth, mellow and calm",
+       "hFa": "ملایم، نرم و آرام"
+      },
+      {
+       "en": "50/50 Blend",
+       "fa": "۵۰/۵۰",
+       "mood": "ok",
+       "hEn": "Balanced and cheerful",
+       "hFa": "متعادل و سرحال"
+      },
+      {
+       "en": "30/70 Robusta",
+       "fa": "۳۰/۷۰ ربوستا",
+       "mood": "energy",
+       "hEn": "Bold, strong and energising",
+       "hFa": "پرقدرت و پرانرژی"
+      }
+     ]
+    }
+   ],
+   "gv": 1
+  },
+  {
+   "id": "ice-cream-croissant",
+   "catKey": "desserts",
+   "nameEn": "Ice Cream Croissant",
+   "nameFa": "کروسان بستنی",
+   "descEn": "A buttery croissant served with a scoop of ice cream.",
+   "descFa": "کروسان کره‌ای همراه با یک اسکوپ بستنی.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "🍰",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "ice-cream-croissant:0",
+     "labelEn": "Regular",
+     "labelFa": "معمولی",
+     "price": 170000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    }
+   ],
+   "art": "croissant"
+  },
+  {
+   "id": "ice-cream-brownie",
+   "catKey": "desserts",
+   "nameEn": "Ice Cream Brownie",
+   "nameFa": "براونی بستنی",
+   "descEn": "A chocolate brownie served with a scoop of ice cream.",
+   "descFa": "براونی شکلاتی همراه با یک اسکوپ بستنی.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "🍰",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "ice-cream-brownie:0",
+     "labelEn": "Regular",
+     "labelFa": "معمولی",
+     "price": 145000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    }
+   ],
+   "art": "brownie"
+  },
+  {
+   "id": "sour-potion",
+   "catKey": "desserts",
+   "nameEn": "Sour Potion",
+   "nameFa": "معجون ترش",
+   "descEn": "A tangy, fruity house dessert. Ask our barista what's inside today.",
+   "descFa": "دسر ترش و میوه‌ای مخصوص کافه. محتویات امروز را از باریستا بپرسید.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "🍰",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "sour-potion:0",
+     "labelEn": "Regular",
+     "labelFa": "معمولی",
+     "price": 185000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    }
+   ],
+   "art": "potion:red"
+  },
+  {
+   "id": "hot-chocolate",
+   "catKey": "hot-bar",
+   "nameEn": "Hot Chocolate",
+   "nameFa": "هات چاکلت",
+   "descEn": "Thick, warming hot chocolate topped with cream.",
+   "descFa": "شکلات داغ غلیظ و گرم با خامه روی آن.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "🍫",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "hot-chocolate:0",
+     "labelEn": "Regular",
+     "labelFa": "معمولی",
+     "price": 110000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    }
+   ],
+   "art": "cup:choc:cream,mug"
+  },
+  {
+   "id": "hot-peanut",
+   "catKey": "hot-bar",
+   "nameEn": "Hot Peanut",
+   "nameFa": "هات پینات",
+   "descEn": "Hot milk blended with peanut butter flavour.",
+   "descFa": "شیر داغ با طعم کرهٔ بادام‌زمینی.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "🍫",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "hot-peanut:0",
+     "labelEn": "Regular",
+     "labelFa": "معمولی",
+     "price": 95000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    }
+   ],
+   "art": "cup:peanut:mug,cream"
+  },
+  {
+   "id": "hot-nutella",
+   "catKey": "hot-bar",
+   "nameEn": "Hot Nutella",
+   "nameFa": "هات نوتلا",
+   "descEn": "Hot milk blended with hazelnut-chocolate spread.",
+   "descFa": "شیر داغ با کرم فندق و شکلات.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "🍫",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "hot-nutella:0",
+     "labelEn": "Regular",
+     "labelFa": "معمولی",
+     "price": 125000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    }
+   ],
+   "art": "cup:nutella:mug,cream"
+  },
+  {
+   "id": "hot-pistachio",
+   "catKey": "hot-bar",
+   "nameEn": "Hot Pistachio",
+   "nameFa": "هات پسته",
+   "descEn": "Hot milk with a creamy pistachio flavour.",
+   "descFa": "شیر داغ با طعم خامه‌ای پسته.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "🍫",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "hot-pistachio:0",
+     "labelEn": "Regular",
+     "labelFa": "معمولی",
+     "price": 137000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    }
+   ],
+   "art": "cup:pistachio:mug,cream"
+  },
+  {
+   "id": "karak-tea",
+   "catKey": "hot-bar",
+   "nameEn": "Karak Tea",
+   "nameFa": "چای کرک",
+   "descEn": "Strong black tea simmered with milk and spices.",
+   "descFa": "چای سیاه پررنگ که با شیر و ادویه می‌جوشد.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "🍫",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "karak-tea:0",
+     "labelEn": "Regular",
+     "labelFa": "معمولی",
+     "price": 93000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    }
+   ],
+   "art": "tea:caramel:spice"
+  },
+  {
+   "id": "masala",
+   "catKey": "hot-bar",
+   "nameEn": "Masala",
+   "nameFa": "ماسالا",
+   "descEn": "Spiced milk tea, warm and aromatic.",
+   "descFa": "چای شیر ادویه‌دار؛ گرم و خوش‌عطر.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "🍫",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "masala:0",
+     "labelEn": "Regular",
+     "labelFa": "معمولی",
+     "price": 96000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    }
+   ],
+   "art": "tea:caramel:spice"
+  },
+  {
+   "id": "nescafe-milk",
+   "catKey": "hot-bar",
+   "nameEn": "Nescafé Milk",
+   "nameFa": "شیر نسکافه",
+   "descEn": "Hot milk with Nescafé. Simple, warm and comforting.",
+   "descFa": "شیر داغ با نسکافه؛ ساده، گرم و دلنشین.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "🍫",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "nescafe-milk:0",
+     "labelEn": "Regular",
+     "labelFa": "معمولی",
+     "price": 82000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    }
+   ],
+   "art": "cup:coffee:mug,foam"
+  },
+  {
+   "id": "cocoa-milk",
+   "catKey": "hot-bar",
+   "nameEn": "Cocoa Milk",
+   "nameFa": "شیر کاکائو",
+   "descEn": "Hot milk with rich cocoa.",
+   "descFa": "شیر داغ با کاکائوی خوش‌طعم.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "🍫",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "cocoa-milk:0",
+     "labelEn": "Regular",
+     "labelFa": "معمولی",
+     "price": 78000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    }
+   ],
+   "art": "cup:cocoa:mug,foam"
+  },
+  {
+   "id": "white-chocolate",
+   "catKey": "hot-bar",
+   "nameEn": "White Chocolate",
+   "nameFa": "وایت چاکلت",
+   "descEn": "Sweet, creamy hot white chocolate.",
+   "descFa": "شکلات سفید داغ؛ شیرین و خامه‌ای.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "🍫",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "white-chocolate:0",
+     "labelEn": "Regular",
+     "labelFa": "معمولی",
+     "price": 92000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true
+    }
+   ],
+   "art": "cup:whitechoc:mug,cream"
+  },
+  {
+   "id": "classic-tea",
+   "catKey": "herbal-tea",
+   "nameEn": "Classic Tea",
+   "nameFa": "چای کلاسیک",
+   "descEn": "Classic black tea, served hot.",
+   "descFa": "چای سیاه کلاسیک، داغ و تازه‌دم.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "🫖",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "classic-tea:0",
+     "labelEn": "For one",
+     "labelFa": "تک‌نفره",
+     "price": 45000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      0
+     ]
+    },
+    {
+     "id": "classic-tea:1",
+     "labelEn": "For two",
+     "labelFa": "دونفره",
+     "price": 45000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      1
+     ]
+    }
+   ],
+   "art": "tea:tea",
+   "groups": [
+    {
+     "k": "serve",
+     "en": "Serving",
+     "fa": "تعداد نفرات",
+     "def": 0,
+     "opts": [
+      {
+       "en": "For one",
+       "fa": "تک‌نفره"
+      },
+      {
+       "en": "For two",
+       "fa": "دونفره"
+      }
+     ]
+    }
+   ],
+   "gv": 1
+  },
+  {
+   "id": "green-tea",
+   "catKey": "herbal-tea",
+   "nameEn": "Green Tea",
+   "nameFa": "چای سبز",
+   "descEn": "Light, fresh green tea.",
+   "descFa": "چای سبز سبک و تازه.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "🫖",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "green-tea:0",
+     "labelEn": "For one",
+     "labelFa": "تک‌نفره",
+     "price": 55000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      0
+     ]
+    },
+    {
+     "id": "green-tea:1",
+     "labelEn": "For two",
+     "labelFa": "دونفره",
+     "price": 55000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      1
+     ]
+    }
+   ],
+   "art": "tea:green",
+   "groups": [
+    {
+     "k": "serve",
+     "en": "Serving",
+     "fa": "تعداد نفرات",
+     "def": 0,
+     "opts": [
+      {
+       "en": "For one",
+       "fa": "تک‌نفره"
+      },
+      {
+       "en": "For two",
+       "fa": "دونفره"
+      }
+     ]
+    }
+   ],
+   "gv": 1
+  },
+  {
+   "id": "white-tea",
+   "catKey": "herbal-tea",
+   "nameEn": "White Tea",
+   "nameFa": "چای سفید",
+   "descEn": "Delicate white tea with a soft, subtle flavour.",
+   "descFa": "چای سفید لطیف با طعمی ملایم.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "🫖",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "white-tea:0",
+     "labelEn": "For one",
+     "labelFa": "تک‌نفره",
+     "price": 65000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      0
+     ]
+    },
+    {
+     "id": "white-tea:1",
+     "labelEn": "For two",
+     "labelFa": "دونفره",
+     "price": 65000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      1
+     ]
+    }
+   ],
+   "art": "tea:white",
+   "groups": [
+    {
+     "k": "serve",
+     "en": "Serving",
+     "fa": "تعداد نفرات",
+     "def": 0,
+     "opts": [
+      {
+       "en": "For one",
+       "fa": "تک‌نفره"
+      },
+      {
+       "en": "For two",
+       "fa": "دونفره"
+      }
+     ]
+    }
+   ],
+   "gv": 1
+  },
+  {
+   "id": "sour-tea",
+   "catKey": "herbal-tea",
+   "nameEn": "Sour Tea",
+   "nameFa": "چای ترش",
+   "descEn": "A tart red herbal infusion.",
+   "descFa": "دمنوش ترش و قرمزرنگ.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "🫖",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "sour-tea:0",
+     "labelEn": "For one",
+     "labelFa": "تک‌نفره",
+     "price": 65000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      0
+     ]
+    },
+    {
+     "id": "sour-tea:1",
+     "labelEn": "For two",
+     "labelFa": "دونفره",
+     "price": 65000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      1
+     ]
+    }
+   ],
+   "art": "tea:red",
+   "groups": [
+    {
+     "k": "serve",
+     "en": "Serving",
+     "fa": "تعداد نفرات",
+     "def": 0,
+     "opts": [
+      {
+       "en": "For one",
+       "fa": "تک‌نفره"
+      },
+      {
+       "en": "For two",
+       "fa": "دونفره"
+      }
+     ]
+    }
+   ],
+   "gv": 1
+  },
+  {
+   "id": "quince-and-lime",
+   "catKey": "herbal-tea",
+   "nameEn": "Lemon Verbena",
+   "nameFa": "به لیمو",
+   "descEn": "Lemon verbena herbal infusion.",
+   "descFa": "دمنوش به‌لیمو.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "🫖",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "quince-and-lime:0",
+     "labelEn": "For one",
+     "labelFa": "تک‌نفره",
+     "price": 50000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      0
+     ]
+    },
+    {
+     "id": "quince-and-lime:1",
+     "labelEn": "For two",
+     "labelFa": "دونفره",
+     "price": 50000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      1
+     ]
+    }
+   ],
+   "art": "tea:verbena",
+   "groups": [
+    {
+     "k": "serve",
+     "en": "Serving",
+     "fa": "تعداد نفرات",
+     "def": 0,
+     "opts": [
+      {
+       "en": "For one",
+       "fa": "تک‌نفره"
+      },
+      {
+       "en": "For two",
+       "fa": "دونفره"
+      }
+     ]
+    }
+   ],
+   "gv": 1
+  },
+  {
+   "id": "borage",
+   "catKey": "herbal-tea",
+   "nameEn": "Borage",
+   "nameFa": "گل گاوزبان",
+   "descEn": "A calming borage herbal infusion.",
+   "descFa": "دمنوش آرام‌بخش گل‌گاوزبان.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "🫖",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "borage:0",
+     "labelEn": "For one",
+     "labelFa": "تک‌نفره",
+     "price": 55000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      0
+     ]
+    },
+    {
+     "id": "borage:1",
+     "labelEn": "For two",
+     "labelFa": "دونفره",
+     "price": 55000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      1
+     ]
+    }
+   ],
+   "art": "tea:borage",
+   "groups": [
+    {
+     "k": "serve",
+     "en": "Serving",
+     "fa": "تعداد نفرات",
+     "def": 0,
+     "opts": [
+      {
+       "en": "For one",
+       "fa": "تک‌نفره"
+      },
+      {
+       "en": "For two",
+       "fa": "دونفره"
+      }
+     ]
+    }
+   ],
+   "gv": 1
+  },
+  {
+   "id": "apple-cardamom-cinnamon",
+   "catKey": "herbal-tea",
+   "nameEn": "Apple, Cardamom, Cinnamon",
+   "nameFa": "سیب، هل، دارچین",
+   "descEn": "A warm infusion of apple, cardamom and cinnamon.",
+   "descFa": "دمنوش گرم سیب، هل و دارچین.",
+   "ingEn": [],
+   "ingFa": [],
+   "emoji": "🫖",
+   "featured": false,
+   "active": true,
+   "variants": [
+    {
+     "id": "apple-cardamom-cinnamon:0",
+     "labelEn": "For one",
+     "labelFa": "تک‌نفره",
+     "price": 72000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      0
+     ]
+    },
+    {
+     "id": "apple-cardamom-cinnamon:1",
+     "labelEn": "For two",
+     "labelFa": "دونفره",
+     "price": 72000,
+     "stock": 50,
+     "available": true,
+     "lowStock": 5,
+     "active": true,
+     "sel": [
+      1
+     ]
+    }
+   ],
+   "art": "tea:apple",
+   "groups": [
+    {
+     "k": "serve",
+     "en": "Serving",
+     "fa": "تعداد نفرات",
+     "def": 0,
+     "opts": [
+      {
+       "en": "For one",
+       "fa": "تک‌نفره"
+      },
+      {
+       "en": "For two",
+       "fa": "دونفره"
+      }
+     ]
+    }
+   ],
+   "gv": 1
+  }
+ ],
+ "challenges": [
+  {
+   "id": "try-3-coffees",
+   "e": "☕",
+   "titleEn": "Try 3 different coffees",
+   "titleFa": "سه قهوهٔ مختلف را امتحان کن",
+   "descEn": "Order three different coffee drinks this week and discover your favourite.",
+   "descFa": "این هفته سه نوشیدنی قهوهٔ متفاوت سفارش بده و موردعلاقه‌ات را پیدا کن.",
+   "rewardEn": "Free pastry",
+   "rewardFa": "یک شیرینی رایگان",
+   "goal": 3,
+   "pts": 50,
+   "active": true,
+   "rule": {
+    "type": "distinct",
+    "catKey": [
+     "espresso-bar",
+     "iced-coffee",
+     "brew"
+    ]
+   }
+  },
+  {
+   "id": "visit-3-times",
+   "e": "📍",
+   "titleEn": "Visit three times",
+   "titleFa": "سه بار به کافه بیا",
+   "descEn": "Place three orders in a week. Regulars get rewarded.",
+   "descFa": "در یک هفته سه سفارش ثبت کن. مشتری‌های ثابت جایزه می‌گیرند.",
+   "rewardEn": "Free filter coffee",
+   "rewardFa": "یک قهوهٔ فیلتر رایگان",
+   "goal": 3,
+   "pts": 40,
+   "active": true,
+   "rule": {
+    "type": "orders",
+    "catKey": null
+   }
+  },
+  {
+   "id": "sweet-tooth",
+   "e": "🍰",
+   "titleEn": "Sweet tooth",
+   "titleFa": "عاشق شیرینی",
+   "descEn": "Try two different desserts from our counter.",
+   "descFa": "دو دسر مختلف از ویترین ما را امتحان کن.",
+   "rewardEn": "10% off next order",
+   "rewardFa": "۱۰٪ تخفیف سفارش بعدی",
+   "goal": 2,
+   "pts": 30,
+   "active": true,
+   "rule": {
+    "type": "distinct",
+    "catKey": "desserts"
+   }
+  },
+  {
+   "id": "first-coffee",
+   "e": "🌟",
+   "titleEn": "Your first coffee",
+   "titleFa": "اولین قهوه‌ات",
+   "descEn": "New here? Order your first coffee and we'll add a welcome bonus to your points.",
+   "descFa": "تازه آمده‌ای؟ اولین قهوه‌ات را سفارش بده تا یک امتیاز خوش‌آمد برایت ثبت کنیم.",
+   "rewardEn": "Welcome bonus",
+   "rewardFa": "هدیهٔ خوش‌آمد",
+   "goal": 1,
+   "pts": 30,
+   "active": true,
+   "permanent": true,
+   "rule": {
+    "type": "distinct",
+    "catKey": [
+     "espresso-bar",
+     "iced-coffee",
+     "brew"
+    ],
+    "firstOnly": true
+   }
+  }
+ ],
+ "combos": [
+  {
+   "id": "morning",
+   "titleEn": "Morning classic",
+   "titleFa": "صبحانهٔ کلاسیک",
+   "descEn": "Cappuccino with an ice cream croissant.",
+   "descFa": "کاپوچینو همراه با کروسان بستنی.",
+   "items": [
+    [
+     "cappuccino",
+     0
+    ],
+    [
+     "ice-cream-croissant",
+     0
+    ]
+   ],
+   "popular": true
+  },
+  {
+   "id": "sweet-break",
+   "titleEn": "Sweet break",
+   "titleFa": "استراحت شیرین",
+   "descEn": "Latte with an ice cream brownie.",
+   "descFa": "لاته همراه با براونی بستنی.",
+   "items": [
+    [
+     "latte",
+     0
+    ],
+    [
+     "ice-cream-brownie",
+     0
+    ]
+   ],
+   "popular": true
+  },
+  {
+   "id": "cool-down",
+   "titleEn": "Cool down",
+   "titleFa": "خنک‌کننده",
+   "descEn": "Iced latte with a fresh lemonade.",
+   "descFa": "آیس لاته همراه با لیموناد تازه.",
+   "items": [
+    [
+     "iced-latte",
+     0
+    ],
+    [
+     "lemonade",
+     0
+    ]
+   ]
+  },
+  {
+   "id": "tea-time",
+   "titleEn": "Tea time",
+   "titleFa": "وقت چای",
+   "descEn": "Classic tea with an ice cream croissant.",
+   "descFa": "چای کلاسیک همراه با کروسان بستنی.",
+   "items": [
+    [
+     "classic-tea",
+     0
+    ],
+    [
+     "ice-cream-croissant",
+     0
+    ]
+   ]
+  }
+ ],
+ "cafe": {
+  "hoursEn": [
+   [
+    "Mon–Fri",
+    "7:30 – 19:00"
+   ],
+   [
+    "Sat–Sun",
+    "9:00 – 20:00"
+   ]
+  ],
+  "hoursFa": [
+   [
+    "شنبه تا چهارشنبه",
+    "۷:۳۰ تا ۱۹:۰۰"
+   ],
+   [
+    "پنجشنبه و جمعه",
+    "۹:۰۰ تا ۲۰:۰۰"
+   ]
+  ],
+  "addrEn": "12 Pine Street, Old Town",
+  "addrFa": "خیابان کاج، پلاک ۱۲، بافت قدیم",
+  "aboutEn": "Fika is a small neighbourhood cafe. We roast in small batches, bake every morning, and keep things simple.",
+  "aboutFa": "فیکا یک کافهٔ کوچک محلی است. قهوه را در بچ‌های کوچک برشته می‌کنیم، هر صبح نان و شیرینی می‌پزیم و همه‌چیز را ساده نگه می‌داریم."
+ },
+ "settings": {
+  "tomanPerPoint": 3000,
+  "comboDiscount": 0.1,
+  "goal": 200,
+  "freeItem": "latte:0"
+ },
+ "menuVersion": 2,
+ "beans": [
+  {
+   "id": "ethiopia",
+   "nameEn": "Ethiopia",
+   "nameFa": "اتیوپی",
+   "notesEn": "Specialty single origin from the birthplace of Arabica. Typically floral and fruity, with jasmine, citrus and berry notes, a light tea-like body and bright acidity.",
+   "notesFa": "قهوهٔ اسپشیالیتی تک‌خاستگاه از زادگاه عربیکا. معمولاً گلی و میوه‌ای با رایحهٔ یاس، مرکبات و توت، بدنهٔ سبک چای‌مانند و اسیدیتهٔ روشن.",
+   "stock": 60,
+   "available": true,
+   "lowStock": 10
+  },
+  {
+   "id": "indonesia",
+   "nameEn": "Indonesia",
+   "nameFa": "اندونزی",
+   "notesEn": "Specialty single origin from the Indonesian islands. Typically full-bodied and low in acidity, with earthy, herbal, dark-chocolate and spice notes.",
+   "notesFa": "قهوهٔ اسپشیالیتی تک‌خاستگاه از جزایر اندونزی. معمولاً بدنهٔ کامل و اسیدیتهٔ پایین با طعم خاکی، گیاهی، شکلات تلخ و ادویه.",
+   "stock": 60,
+   "available": true,
+   "lowStock": 10
+  }
+ ]
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Fika admin</title>
+<script src="/theme.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Vazirmatn:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/admin.css">
+</head>
+<body>
+<div class="shell" id="shell">
+  <aside class="side" id="side">
+    <a class="logo" href="/admin.html"><span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h13v5a6 6 0 0 1-6 6h-1a6 6 0 0 1-6-6z"/><path d="M17 11h1.500a2.500 2.500 0 0 1 0 5H16.500"/><path d="M8 3c-1 1.500 1 2 0 3.500M12 3c-1 1.500 1 2 0 3.500"/></svg></span><span><b id="brandName">Fika</b><small id="brandSub"></small></span></a>
+    <nav id="nav" aria-label="Admin"></nav>
+    <div class="who" id="who"></div>
+  </aside>
+  <div class="col">
+    <header class="bar" id="bar">
+      <h1 id="title"></h1>
+      <div class="ctl" id="ctl"></div>
+    </header>
+    <main id="app" tabindex="-1"></main>
+  </div>
+</div>
+<div id="toasts" role="status" aria-live="polite"></div>
+<dialog id="dlg"></dialog>
+<script type="module" src="/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,2 @@
+{"name":"fika","version":"1.0.0","private":true,"description":"Fika cafe: zero-dependency Node.js server + plain HTML/CSS/JS","engines":{"node":">=18"},
+"scripts":{"start":"node server.js","test":"node --test"}}
