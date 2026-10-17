@@ -291,7 +291,6 @@ dialog[open]::backdrop{opacity:1}
 .rv.in{transform:none}
 main{animation:none}
 @keyframes pg{from{opacity:0;transform:translateY(14px)}}
-@supports not (view-transition-name:none){#app.enter{animation:pg .45s var(--flow)}}
 
 /* View Transitions: page slide (direction aware) + filter morph */
 #app{view-transition-name:page}
@@ -300,15 +299,23 @@ main{animation:none}
 ::view-transition-old(root),::view-transition-new(root){animation:none;mix-blend-mode:normal}
 ::view-transition-old(root){display:none}
 /* book-style page turn: transform + opacity only (runs on the compositor), under 0.4 s. Forward: the old page turns away from the spine. Back: the page turns back in. */
-@keyframes bkOut{to{opacity:0;transform:perspective(1100px) rotateY(calc(var(--sx)*-78deg))}}
-@keyframes bkIn{from{opacity:0;transform:perspective(1100px) rotateY(calc(var(--sx)*-78deg))}}
-@keyframes bkUp{from{opacity:.4;transform:scale(.985)}}
-@keyframes bkDown{to{opacity:0}}
+/* The turning page stays fully opaque (a fade makes it look like a cross-fade, not a page); it only disappears once it is edge-on at 90deg. */
+@keyframes bkOut{0%{transform:none}88%{opacity:1}100%{opacity:0;transform:perspective(1100px) rotateY(calc(var(--sx)*-90deg))}}
+@keyframes bkIn{from{transform:perspective(1100px) rotateY(calc(var(--sx)*-90deg))}}
+@keyframes bkUp{from{transform:scale(.985)}}
+@keyframes bkDown{0%,98%{opacity:1}100%{opacity:0}}
 html[data-vt=page]::view-transition-old(page),html[data-vt=page]::view-transition-new(page){transform-origin:calc(50% - var(--sx)*50%) 50%;backface-visibility:hidden}
 html[data-vt=page]::view-transition-old(page){animation:bkOut .36s cubic-bezier(.45,.05,.55,.95) both;z-index:2}
 html[data-vt=page]::view-transition-new(page){animation:bkUp .34s ease-out both}
-html[data-vt=page][data-dir=back]::view-transition-old(page){animation:bkDown .3s linear both;z-index:1}
+html[data-vt=page][data-dir=back]::view-transition-old(page){animation:bkDown .38s linear both;z-index:1}
 html[data-vt=page][data-dir=back]::view-transition-new(page){animation:bkIn .38s cubic-bezier(.45,.05,.55,.95) both;z-index:2}
+/* Browsers without View Transitions (Firefox, older Safari/Android WebViews): the new page turns in from the spine, same look, transform only. */
+@keyframes bkEnter{from{transform:perspective(1100px) rotateY(calc(var(--sx)*-90deg))}}
+@keyframes bkEnterB{from{transform:perspective(1100px) rotateY(calc(var(--sx)*90deg))}}
+.no-vt #app.enter .card,.no-vt #app.enter .em{animation:none}   /* the page itself turns; no per-card fade on top of it */
+.no-vt #app.enter{transform-origin:calc(50% - var(--sx)*50%) 50%;backface-visibility:hidden;animation:bkEnter .4s cubic-bezier(.3,.1,.3,1) backwards}
+.no-vt[data-dir=back] #app.enter{transform-origin:calc(50% + var(--sx)*50%) 50%;animation-name:bkEnterB}
+#app{overflow-anchor:none}
 html[data-vt=filter]::view-transition-old(page),html[data-vt=filter]::view-transition-new(page){animation:none}
 html[data-vt=filter]::view-transition-old(page){display:none}
 ::view-transition-group(*){animation-duration:.6s;animation-timing-function:var(--flow)}

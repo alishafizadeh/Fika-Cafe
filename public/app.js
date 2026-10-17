@@ -1,6 +1,7 @@
 import {gamesShell,mountGames} from './games.js';
 import {art,ico,chIcon,face} from './icons.js';
 import {learnHome,learnPage} from './learn.js';
+if(!document.startViewTransition)document.documentElement.classList.add('no-vt');
 // Option groups (coffee blend, origin, milk, serving). A product's variants are every combination of the options;
 // variant 0 is always the default one, `vsel[i]` lists the option picked in each group for variant i.
 const optsUI=(m,sl,pref)=>{const sel=m.vsel[sl]||[],fa=document.documentElement.lang==='fa';return `<div id="sz" class="opts" data-pid="${m.id}">${m.groups.map((g,gi)=>{const cur=g.opts[sel[gi]]||g.opts[0];
@@ -29,11 +30,17 @@ async function checkout(btn){btn.disabled=true;
  const lines=cart().map(l=>({variantId:l.id+':'+(Number.isInteger(l.size)?l.size:0),qty:l.qty,free:!!l.free,comboId:l.cb||undefined}));
  const r=await api('/api/orders',{lines});btn.disabled=false;
  if(r.error){const c=r.error.split(':');toast(c[0]==='OUT_OF_STOCK'?u().over(X().byId(c[1]).name,0):(c[0]==='TOO_MANY_PENDING'?u().x.pend:c[0]==='RATE_LIMITED'?u().x.busy:r.error));await loadMe();route(1);return}
- ST=r.state;S.set('cart',[]);toast((r.order.pts?'+'+r.order.pts.toLocaleString(loc())+' '+u().pt+' · ':'')+u().after);route()}
-function connectEvents(){try{const es=new EventSource('/api/events');es.onmessage=async e=>{const m=JSON.parse(e.data);
- if(m.type==='menu'){location.reload();return}
+ ST=r.state;S.set('cart',[]);toast((r.order.pts?'+'+r.order.pts.toLocaleString(loc())+' '+u().pt+' · ':'')+u().after);route(1)}
+// Live updates. Events that arrive together (a purchase sends 'inventory' and 'order') are merged into one refresh, and the page is only redrawn
+// when the server data really differs from what is on screen (a like or a purchase made here is already shown), so the scroll position never moves.
+const dsig=(m,st)=>JSON.stringify([m.menu,st,m.beans,m.challenges,m.combos]);
+let evT=0,evBusy=false;
+async function liveRefresh(){if(evBusy){evT=setTimeout(liveRefresh,300);return}evBusy=true;
+ try{const r=await api('/api/bootstrap');if(r.error||!r.menu)return;const same=dsig(r,r.state||ST)===dsig(DATA,ST);DATA.menu=r.menu;DATA.beans=r.beans;DATA.challenges=r.challenges;DATA.combos=r.combos;ST=r.state||ST;if(!same)route(1)}catch(e){}finally{evBusy=false}}
+function connectEvents(){try{const es=new EventSource('/api/events');es.onmessage=e=>{let m={};try{m=JSON.parse(e.data)}catch(x){return}
+ if(m.type==='menu'){try{sessionStorage.setItem('fika:pos',JSON.stringify({h:location.hash,y:scrollY}))}catch(x){}location.reload();return}
  if(m.type==='order'&&m.uid&&(!ME||m.uid!==ME.id))return;
- const r=await api('/api/bootstrap');DATA.menu=r.menu;ST=r.state||ST;route(1)}}catch(e){}}
+ clearTimeout(evT);evT=setTimeout(liveRefresh,250)}}catch(e){}}
 const LG={};
 const heart=on=>`<svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" style="fill:${on?'currentColor':'none'};stroke:currentColor;stroke-width:2;stroke-linejoin:round"><path d="M12 20.5s-8-4.8-9.6-9.7C1.300 7.600 3.200 4.500 6.400 4.500c2 0 3.700 1.100 5.600 3.300 1.900-2.200 3.600-3.300 5.600-3.300 3.200 0 5.100 3.100 4 6.300-1.600 4.900-9.600 9.700-9.600 9.700z"/></svg>`;
 const EXP='return{P,pts,prog,GOAL,unit,money,card,COMBOS,byId,MENU,CHALLENGES,setCat:v=>{cat=v},user,users,favs,cart,orders}';
@@ -268,10 +275,11 @@ if(a==='profile'&&!user()){location.hash='#/login';return}
 if((a==='login'||a==='register')&&user()){location.hash='#/profile';return}
 const pg=a===''?P.home():a==='item'?P.item(b):a==='reset'?P.reset(b):a==='challenge'?P.challenge(b):a==='settings'?settingsPage():a==='games'?gamesShell():a==='learn'?learnPage(lang(),b):(P[a]&&a!=='nf'?P[a]():P.nf());
 const app=document.getElementById('app');
+if(keep)app.style.minHeight=app.offsetHeight+'px';
 if(!(a==='games'&&keep&&document.getElementById('gm')))app.innerHTML=pg;app.querySelectorAll('.ph').forEach(p=>{if(!p.firstElementChild)p.innerHTML='<span class="em">'+p.innerHTML+'</span>'});
 if(a==='challenges')app.insertAdjacentHTML('beforeend','<section class="sec">'+gameTile()+'</section>');
 if(a==='games'&&!keep)mountGames({lang:lang(),api,me:user(),loc:loc(),refresh:async()=>{await loadMe();route(1)}});
-if(!keep){app.style.animation='none';app.offsetWidth;app.style.animation='';app.classList.add('enter');reveal(app)}else app.classList.remove('enter')
+if(!keep){app.style.animation='none';app.offsetWidth;app.style.animation='';if(document.documentElement.dataset.vt==='page')app.classList.remove('enter');else app.classList.add('enter');reveal(app)}else app.classList.remove('enter')
 const nav=u().nav.map(n=>[n[0]==='P'?(user()?'/profile':'/login'):n[0],n[1],n[2]]);
 const cur=h=>('/'+a)===h||(a===''&&h==='/')||(a==='item'&&h==='/menu')||((a==='challenge'||a==='games')&&h==='/challenges')||(a==='learn'&&h==='/')||((a==='login'||a==='register'||a==='forgot'||a==='favorites')&&/profile|login/.test(h));
 const SV=p=>`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${p}</svg>`;
@@ -292,7 +300,7 @@ document.getElementById('ctl').innerHTML=`<div class="hseg dsk" role="group" ari
 +`<a class="iconbtn" href="#/settings" title="${ss.h}" aria-label="${ss.h}"${a==='settings'?' aria-current="page"':''}>${SV('<path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="17" r="2"/>')}</a>`;
 const sb=document.getElementById('sbtn');sb.setAttribute('aria-label',ss.ph);sb.querySelector('.sl').textContent=ss.ph;
 document.querySelectorAll('.bt').forEach(e=>e.textContent=lang()==='fa'?'فیکا':'Fika');document.title=u().title;document.documentElement.style.setProperty('--hh',hh()+'px');
-if(keep){window.scrollTo(0,y);const q=k=>document.querySelector('[data-'+k+'="'+fv+'"]'),f=fk&&(q(fk)||(fk==='dec'?q('add'):fk==='ldec'?q('linc'):null));if(f)f.focus({preventScroll:true});
+if(keep){window.scrollTo(0,y);requestAnimationFrame(()=>{window.scrollTo(0,y);app.style.minHeight=''});const q=k=>document.querySelector('[data-'+k+'="'+fv+'"]'),f=fk&&(q(fk)||(fk==='dec'?q('add'):fk==='ldec'?q('linc'):null));if(f)f.focus({preventScroll:true});
 const c2=document.querySelector('.chips');if(c2){c2.scrollLeft=csl;const p=c2.querySelector('[aria-pressed=true]');if(p){const r=p.getBoundingClientRect(),cr=c2.getBoundingClientRect();if(r.left<cr.left||r.right>cr.right)p.scrollIntoView({inline:'center',block:'nearest'})}}}else window.scrollTo(0,0)}
 document.addEventListener('click',e=>{
 const t=e.target.closest('[data-fav],[data-add],[data-cat],[data-size],[data-o],[data-rm],[data-checkout],[data-combo],[data-dec],[data-ldec],[data-linc],[data-clear],[data-view],[data-redeem],[data-logout],[data-logoutall],button[data-theme],button[data-lang]');if(!t)return;
@@ -354,4 +362,4 @@ sd.addEventListener('keydown',e=>{if(e.key!=='ArrowDown'&&e.key!=='ArrowUp')retu
 document.getElementById('sbtn').addEventListener('click',openS);
 document.addEventListener('keydown',e=>{if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k'){e.preventDefault();openS()}});
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',()=>{if(prefs().theme==='system')applyAll()});
-window.addEventListener('hashchange',goRoute);addEventListener('resize',()=>{document.documentElement.style.setProperty('--hh',hh()+'px');moveInd(false)});addEventListener('load',()=>moveInd(false));S.set('cart',S.get('cart',[]).filter(l=>LG.en.byId(l.id)));applyAll();route();connectEvents();
+window.addEventListener('hashchange',goRoute);addEventListener('resize',()=>{document.documentElement.style.setProperty('--hh',hh()+'px');moveInd(false)});addEventListener('load',()=>moveInd(false));S.set('cart',S.get('cart',[]).filter(l=>LG.en.byId(l.id)));applyAll();route();(()=>{try{const v=JSON.parse(sessionStorage.getItem('fika:pos')||'null');sessionStorage.removeItem('fika:pos');if(v&&v.h===location.hash&&v.y>0){scrollTo(0,v.y);requestAnimationFrame(()=>scrollTo(0,v.y))}}catch(e){}})();connectEvents();
